@@ -8,7 +8,7 @@
         /* Custom CSS for the grid */
         .grid-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns in a row */
+     
         gap: 20px; /* Gap between boxes */
         justify-content: center; /* Center the boxes horizontally */
         padding-left: 40px; /* Add left padding */
@@ -63,7 +63,7 @@
     <meta name="description" content="Appku - Software Landing Page">
 
     <!-- ========== Page Title ========== -->
-    <title>Squadron Technology - Case Studies</title>
+    <title>Squadron Technology</title>
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
@@ -220,70 +220,126 @@
     <br>
     <br>
     <!-- End Services Details Area -->
-    <div class="grid-container">
-        <!-- Box 1 -->
-        <div class="services-style-four wow fadeInUp">
-            <div class="thumb">
-                <img src="case_studies_images/PharmacySaving.jpg" alt="Icon">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Web Scraping Challenge and Solution</title>
+        <!-- Add your CSS styles here -->
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+                margin: 0;
+                padding: 20px;
+            }
+            .grid-container {
+                max-width: 1300px;
+                margin: 0 auto;
+                padding: 30px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+
+            }
+
+            .grid-container h1,
+            .grid-container h2 {
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .grid-container img {
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+                height: auto;
+                margin-top: 20px;
+            }
+
+            .grid-container h1 {
+                font-size: 36px;
+                color: black;
+                margin-top: 20px;
+            }
+
+            .grid-container h2 {
+                font-size: 30px;
+                color: #555;
+                margin-top: 20px;
+                text-align: left;
+            }
+
+            .grid-container p {
+                font-size: 20px;
+                color: #666;
+                line-height: 1.6;
+                margin-bottom: 30px;
+            }
+
+            .grid-container a {
+                color: #007bff;
+                text-decoration: none;
+            }
+
+            .grid-container a:hover {
+                text-decoration: underline;
+            }
+
+            .grid-container ol,
+            .grid-container ul {
+                margin-left: 20px;
+                font-size: 20px;
+            }
+
+            .grid-container strong {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div><h1>Client Success Story: Pharmacy Saving Advisor Uncovering Lowest Medication Costs</h1><br>
+            <img src="case_studies_images/PharmacySaving.html.png" alt="Client Success Image"><br>
+                <h2>Challenges:</h2>
+            <ol>
+                <li><strong>Website Structure:</strong> The target websites (<a href="https://costplusdrugs.com">costplusdrugs.com</a> and <a href="https://goodrx.com">goodrx.com</a>) have varying structures, including dynamic elements loaded through JavaScript. This makes it challenging to locate and extract the required data using traditional scraping techniques.</li><br>
+                <li><strong>Anti-Scraping Mechanisms:</strong> Websites often implement anti-scraping mechanisms to deter automated data collection. These mechanisms include CAPTCHAs, rate limiting, and dynamic element IDs, posing challenges to consistent and reliable scraping.</li><br>
+                <li><strong>Data Accuracy:</strong> Ensuring the accuracy of scraped data is crucial. Prices may be displayed in different formats, and extracting the correct pricing information while accounting for variations becomes a challenge.</li>
+            </ol>
+        
+            <h2>Solution:</h2>
+            <p>&ensp; The solution to the challenge encompasses several essential components:</p>
+            <ul>
+                <li><strong>Selenium WebDriver:</strong> To handle the dynamic aspects of the websites, we utilized the Selenium WebDriver with Python. This allowed us to interact with the websites just like a human user, enabling us to bypass some anti-scraping measures and extract data from JavaScript-rendered content.</li><br>
+                <li><strong>CAPTCHA Handling:</strong> In case of encountering CAPTCHAs, we implemented a manual intervention mechanism. When the scraper encountered a CAPTCHA, it paused and prompted an operator to solve it before resuming scraping.</li><br>
+                <li><strong>Properties used for scraping:</strong> We used CLASS_NAME, XPATH, TAG_NAME, and CSS selectors to locate and extract specific elements from the web pages. These techniques provided flexibility in adapting to changes in the website's structure.</li><br>
+                <li><strong>Data Parsing and Normalization:</strong> Extracted data, especially prices, underwent thorough parsing and normalization to ensure consistency in formats. Regular expressions and string manipulation were employed for this purpose.</li>
+            </ul>
+        
+            <h2>Workflow:</h2>
+            <ol>
+                <li><strong>Website Navigation:</strong> The scraper uses the Selenium WebDriver to navigate to the target websites' pages for various drugs.</li><br>
+                <li><strong>Data Extraction:</strong> CLASS_NAME, XPATH, TAG_NAME, and CSS selectors are employed to locate drug names, dosages, and prices on the pages. The scraper interacts with dynamic elements to load necessary content.</li><br>
+                <li><strong>Data Processing:</strong> Extracted data is parsed and normalized. Price formats are standardized for accurate comparison.</li><br>
+                <li><strong>Comparison:</strong> Scraped prices from both websites for the same drug are compared to find the lowest price.</li><br>
+                <li><strong>Output:</strong> The lowest price for each drug is stored in a structured format (e.g., CSV, JSON) for easy reference and analysis.</li>
+            </ol>
+        
+            <h2>Conclusion:</h2>
+            <ol>Through diligent web scraping using Selenium, we successfully tackled the challenges posed by <a href="https://costplusdrugs.com">costplusdrugs.com</a> and <a href="https://goodrx.com">goodrx.com</a> to find the lowest prices for various drugs. By combining automation, human intervention for CAPTCHAs, and data normalization techniques, we ensured accurate and consistent results. This web scraping project equips Health Saver Pharmacy to provide its customers with up-to-date information on the most cost-effective options for their prescription medications.</ol><br>
             </div>
-            <div class="info">
-                <h4><a href="#">Pharmacy Saving</a></h4>
-                <p>Pharmacy Saving Advisor Uncovering Lowest Medication Costs</p>
-                <a href="PharmacySaving.html" class="btn btn-primary">Learn More</a>
- <!-- Added "Learn More" button -->
-            </div>
-        </div>
-        <div class="services-style-four wow fadeInUp">
-            <div class="thumb">
-                <img src="assets/img/icon/analytics/cloud-server.png" alt="Icon">
-            </div>
-            <div class="info">
-                <h4><a href="#">Build Digital Products</a></h4>
-                <p>A digital product is an intangible asset or piece of media that can be sold and distributed repeatedly online without the need to replenish inventory.</p>
-                <a href="#" class="btn btn-primary">Learn More</a> <!-- Added "Learn More" button -->
-            </div>
-        </div>
-        <div class="services-style-four wow fadeInUp">
-            <div class="thumb">
-                <img src="assets/img/icon/analytics/cloud-server.png" alt="Icon">
-            </div>
-            <div class="info">
-                <h4><a href="#">Build Digital Products</a></h4>
-                <p>A digital product is an intangible asset or piece of media that can be sold and distributed repeatedly online without the need to replenish inventory.</p>
-                <a href="#" class="btn btn-primary">Learn More</a> <!-- Added "Learn More" button -->
-            </div>
-        </div>
-        <div class="services-style-four wow fadeInUp">
-            <div class="thumb">
-                <img src="assets/img/icon/analytics/cloud-server.png" alt="Icon">
-            </div>
-            <div class="info">
-                <h4><a href="#">Build Digital Products</a></h4>
-                <p>A digital product is an intangible asset or piece of media that can be sold and distributed repeatedly online without the need to replenish inventory.</p>
-                <a href="#" class="btn btn-primary">Learn More</a> <!-- Added "Learn More" button -->
-            </div>
-        </div>
-        <div class="services-style-four wow fadeInUp">
-            <div class="thumb">
-                <img src="assets/img/icon/analytics/cloud-server.png" alt="Icon">
-            </div>
-            <div class="info">
-                <h4><a href="#">Build Digital Products</a></h4>
-                <p>A digital product is an intangible asset or piece of media that can be sold and distributed repeatedly online without the need to replenish inventory.</p>
-                <a href="#" class="btn btn-primary">Learn More</a> <!-- Added "Learn More" button -->
-            </div>
-        </div>
-        <div class="services-style-four wow fadeInUp">
-            <div class="thumb">
-                <img src="assets/img/icon/analytics/cloud-server.png" alt="Icon">
-            </div>
-            <div class="info">
-                <h4><a href="#">Build Digital Products</a></h4>
-                <p>A digital product is an intangible asset or piece of media that can be sold and distributed repeatedly online without the need to replenish inventory.</p>
-                <a href="#" class="btn btn-primary">Learn More</a> <!-- Added "Learn More" button -->
-            </div>
-        </div>
-    </div>
+
+
+            
+        </div><br>
+    </body>
+    </html>
+
+
+    
     <!-- Start Footer 
     ============================================= -->
     <footer class="bg-dark text-light">

@@ -7,44 +7,69 @@
     <style>
         /* Custom CSS for the grid */
         .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns in a row */
-        gap: 20px; /* Gap between boxes */
-        justify-content: center; /* Center the boxes horizontally */
-        padding-left: 40px; /* Add left padding */
-        padding-right: 40px; /* Add right padding */
-    }
-
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns in a row */
+            gap: 20px; /* Gap between boxes */
+            justify-content: center; /* Center the boxes horizontally */
+            padding-left: 50px; /* Add left padding */
+            padding-right: 50px; /* Add right padding */
+        }
+    
         /* Custom CSS for "Build Digital Products" box */
         .services-style-four {
             background-color: #f5f5f5; /* Background color */
             border: 1px solid #ddd; /* Border style */
-            padding: 40px; /* Padding around the box */
+            padding: 20px; /* Decrease padding around the box */
+            text-align: center; /* Center text */
+            transition: transform 0.3s ease; /* Add a smooth hover effect */
         }
-
+    
+        .services-style-four:hover {
+            transform: scale(1.05); /* Enlarge the box on hover */
+        }
+    
         .services-style-four .thumb img {
-            max-width: 50px; /* Adjust the image size as needed */
+            max-width: 80px; /* Adjust the image size as needed */
+            height: auto; /* Maintain image aspect ratio */
         }
-
+    
         .services-style-four h4 a {
             color: #333; /* Heading text color */
             text-decoration: none; /* Remove underline from links */
+            font-weight: bold; /* Add bold font-weight */
+            font-size: 16px; /* Decrease font size */
         }
-
+    
         .services-style-four p {
             color: #666; /* Paragraph text color */
+            font-size: 14px; /* Decrease font size */
+            margin-top: 0; /* Remove margin on top to eliminate extra space */
+            margin-bottom: 10px; /* Add margin below the paragraph */
         }
+    
         .services-style-four .btn {
-        background-color: lightblue; /* Button background color */
-        color: #fff; /* Button text color */
-        border: none; /* Remove button border */
-        padding: 10px 20px; /* Button padding */
-        text-decoration: none; /* Remove button underline */
-        display: inline-block; /* Make the button inline */
-        margin-top: 10px; /* Add spacing below the paragraph */
-    }
-        
+            background-color: lightblue; /* Button background color */
+            color: #fff; /* Button text color */
+            border: none; /* Remove button border */
+            padding: 10px 15px; /* Decrease button padding */
+            text-decoration: none; /* Remove button underline */
+            display: inline-block; /* Make the button inline */
+            margin-top: 10px; /* Add spacing below the paragraph */
+            font-weight: bold; /* Add bold font-weight */
+            transition: background-color 0.3s ease; /* Add a smooth background color transition */
+        }
+    
+        .services-style-four .btn:hover {
+            background-color: #0099cc; /* Change button background color on hover */
+        }
     </style>
+    
+    
+    
+    
+    
+    
+    
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DW6B4QEHGQ"></script>
 <script>
@@ -229,7 +254,7 @@
             <div class="info">
                 <h4><a href="#">Pharmacy Saving</a></h4>
                 <p>Pharmacy Saving Advisor Uncovering Lowest Medication Costs</p>
-                <a href="PharmacySaving.html" target="_blank" class="btn btn-primary">Learn More</a>
+                <a href="PharmacySaving.html"  class="btn btn-primary">Learn More</a>
  <!-- Added "Learn More" button -->
             </div>
         </div>
@@ -240,7 +265,7 @@
             <div class="info">
                 <h4><a href="#">HIPAA</a></h4>
                 <p>Compliant and Secure Healthcare Solutions on AWS Cloud for US Healthcare with CICD</p>
-                <a href="HIPAA.html" target="_blank" class="btn btn-primary">Learn More</a>
+                <a href="HIPAA.html"  class="btn btn-primary">Learn More</a>
             </div>
         </div>
         <div class="services-style-four wow fadeInUp">
@@ -250,7 +275,7 @@
             <div class="info">
                 <h4><a href="#">E-Commerce Seller Dashboard</a></h4>
                 <p>Craft a Dynamic E-Commerce Seller Dashboard for Real-time Business Empowerment through Insights and Analytics</p>
-                <a href="ecommerce.html" target="_blank" class="btn btn-primary">Learn More</a>
+                <a href="ecommerce.html"  class="btn btn-primary">Learn More</a>
             </div>
         </div>
         <div class="services-style-four wow fadeInUp">
@@ -260,7 +285,7 @@
             <div class="info">
                 <h4><a href="#">Scraper Optimization and Containerization Solution</a></h4>
                 <p>Elevating Efficiency Scraper Optimization and Containerization Solutions</p>
-                <a href="scrapper.html  " target="_blank" class="btn btn-primary">Learn More</a>
+                <a href="scrapper.html  "  class="btn btn-primary">Learn More</a>
             </div>
         </div>
         <div class="services-style-four wow fadeInUp">
@@ -270,7 +295,7 @@
             <div class="info">
                 <h4><a href="#">Unleashing the Power of AI and Big Data</a></h4>
                 <p>Unleashing the Power of AI and Big Data: Building Kudala's Private Multi-Tenant Cloud with Kubernetes</p>
-                <a href="Kudala.html" target="_blank" class="btn btn-primary">Learn More</a>
+                <a href="Kudala.html"  class="btn btn-primary">Learn More</a>
             </div>
         </div>
         
@@ -382,7 +407,7 @@ Khoraj, Gandhinagar -382421
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                       <p style="font-size:15px;">Copyright © Squadron Technology  Privacy | Integrity @2022  All Right Reserved By <a href="https://360digit.in/" target="_blank"> 360digit.in</a></p>
+                       <p style="font-size:15px;">Copyright © Squadron Technology  Privacy | Integrity @2022  All Right Reserved By <a href="https://360digit.in/" > 360digit.in</a></p>
                     </div>
                    
                 </div>

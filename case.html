@@ -6,62 +6,80 @@
 <head>
     <style>
         /* Custom CSS for the grid */
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columns in a row */
-            gap: 20px; /* Gap between boxes */
-            justify-content: center; /* Center the boxes horizontally */
-            padding-left: 50px; /* Add left padding */
-            padding-right: 50px; /* Add right padding */
-        }
-    
-        /* Custom CSS for "Build Digital Products" box */
-        .services-style-four {
-            background-color: #f5f5f5; /* Background color */
-            border: 1px solid #ddd; /* Border style */
-            padding: 20px; /* Decrease padding around the box */
-            text-align: center; /* Center text */
-            transition: transform 0.3s ease; /* Add a smooth hover effect */
-        }
-    
-        .services-style-four:hover {
-            transform: scale(1.05); /* Enlarge the box on hover */
-        }
-    
-        .services-style-four .thumb img {
-            max-width: 80px; /* Adjust the image size as needed */
-            height: auto; /* Maintain image aspect ratio */
-        }
-    
-        .services-style-four h4 a {
-            color: #333; /* Heading text color */
-            text-decoration: none; /* Remove underline from links */
-            font-weight: bold; /* Add bold font-weight */
-            font-size: 16px; /* Decrease font size */
-        }
-    
-        .services-style-four p {
-            color: #666; /* Paragraph text color */
-            font-size: 14px; /* Decrease font size */
-            margin-top: 0; /* Remove margin on top to eliminate extra space */
-            margin-bottom: 10px; /* Add margin below the paragraph */
-        }
-    
-        .services-style-four .btn {
-            background-color: lightblue; /* Button background color */
-            color: #fff; /* Button text color */
-            border: none; /* Remove button border */
-            padding: 10px 15px; /* Decrease button padding */
-            text-decoration: none; /* Remove button underline */
-            display: inline-block; /* Make the button inline */
-            margin-top: 10px; /* Add spacing below the paragraph */
-            font-weight: bold; /* Add bold font-weight */
-            transition: background-color 0.3s ease; /* Add a smooth background color transition */
-        }
-    
-        .services-style-four .btn:hover {
-            background-color: #0099cc; /* Change button background color on hover */
-        }
+        /* Custom CSS for the grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Change to a single column for small screens */
+    gap: 20px;
+    justify-content: center;
+    padding-left: 10px; /* Adjust padding for smaller screens */
+    padding-right: 10px; /* Adjust padding for smaller screens */
+}
+
+/* Add a media query for screens wider than 768px */
+@media screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+}
+
+/* Add a media query for screens wider than 1024px */
+@media screen and (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for large screens */
+        padding-left: 50px; /* Restore original padding for larger screens */
+        padding-right: 50px; /* Restore original padding for larger screens */
+    }
+}
+
+/* Custom CSS for the rest of the styles remains the same */
+.services-style-four {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.services-style-four:hover {
+    transform: scale(1.05);
+}
+
+.services-style-four .thumb img {
+    max-width: 80px;
+    height: auto;
+}
+
+.services-style-four h4 a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.services-style-four p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.services-style-four .btn {
+    background-color: lightblue;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.services-style-four .btn:hover {
+    background-color: #0099cc;
+}
+
     </style>
     
     

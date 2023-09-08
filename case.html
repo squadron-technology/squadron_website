@@ -7,11 +7,11 @@
     <style>
         /* Custom CSS for the grid */
         /* Custom CSS for the grid */
-.grid-container {
+        .grid-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Change to a single column for small screens */
     gap: 20px;
-    justify-content: center;
+    justify-content: flex-end; /* Move the button to the right */
     padding-left: 10px; /* Adjust padding for smaller screens */
     padding-right: 10px; /* Adjust padding for smaller screens */
 }
@@ -64,9 +64,7 @@
     margin-bottom: 10px;
 }
 .button {
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
+  text-align: right; /* Align the button text to the right */
 }
 
 .button a {
@@ -74,13 +72,22 @@
   padding: 10px 20px; /* Adjust padding as needed */
   border: 2px solid transparent; /* Set the initial border to transparent */
   text-decoration: none;
-  transition: border-color 0.3s ease; /* Add a smooth transition for the border color change */
+  color: white !important; /* Set the text color to white by default and override conflicting styles */
+  transition: color 0.3s ease; /* Add a smooth transition for the text color change */
+  margin-left: auto; /* Push the button to the right */
 }
 
 .button a:hover {
   border-color: transparent; /* Change the border color to transparent on hover */
-  color: #000; /* Change the text color on hover (optional) */
+  color: black !important;; /* Change the text color to black on hover */
 }
+
+
+
+
+
+
+
 /* .services-style-four .btn {
     background-color: lightblue;
     color: #fff;

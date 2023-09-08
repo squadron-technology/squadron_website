@@ -307,7 +307,6 @@
     <body>
         <div class="grid-container">
             <!-- <div><h1>Client Success Story: Pharmacy Saving Advisor Uncovering Lowest Medication Costs</h1><br> -->
-            <img src="case_studies_images/PharmacySaving.html.png" alt="Client Success Image"><br>
                 <h2>Challenges:</h2>
             <ol>
                 <li><strong>Website Structure:</strong> The target websites (<a href="https://costplusdrugs.com">costplusdrugs.com</a> and <a href="https://goodrx.com">goodrx.com</a>) have varying structures, including dynamic elements loaded through JavaScript. This makes it challenging to locate and extract the required data using traditional scraping techniques.</li><br>
@@ -317,6 +316,8 @@
         
             <h2>Solution:</h2>
             <p>&ensp; The solution to the challenge encompasses several essential components:</p>
+            <img src="case_studies_images/PharmacySaving.html.png" alt="Client Success Image"><center><small><b> Architecture diagram for the Pharmacy Saving project.</b></small></center><br>
+
             <ul style="list-style-type:disc;">
                 <li><strong>Selenium WebDriver:</strong> To handle the dynamic aspects of the websites, we utilized the Selenium WebDriver with Python. This allowed us to interact with the websites just like a human user, enabling us to bypass some anti-scraping measures and extract data from JavaScript-rendered content.</li><br>
                 <li><strong>CAPTCHA Handling:</strong> In case of encountering CAPTCHAs, we implemented a manual intervention mechanism. When the scraper encountered a CAPTCHA, it paused and prompted an operator to solve it before resuming scraping.</li><br>

@@ -9,17 +9,17 @@
         /* Custom CSS for the grid */
         .grid-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Change to a single column for small screens */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    justify-content: flex-end; /* Move the button to the right */
-    padding-left: 10px; /* Adjust padding for smaller screens */
-    padding-right: 10px; /* Adjust padding for smaller screens */
+    justify-content: flex-end;
+    padding: 20px 10px;
 }
 
-/* Add a media query for screens wider than 768px */
-@media screen and (min-width: 768px) {
+/* Add a media query for screens wider than 1024px */
+@media screen and (min-width: 1024px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px 50px;
     }
 }
 
@@ -79,7 +79,7 @@
 
 .button a:hover {
   border-color: transparent; /* Change the border color to transparent on hover */
-  color: black !important;; /* Change the text color to black on hover */
+  color: black !important; /* Change the text color to black on hover */
 }
 
 
@@ -294,7 +294,7 @@
                 <img src="case_studies_images/PharmacySaving.webp" alt="Icon">
             </div>
             <div class="info">
-                <h4><a href="#">Pharmacy Saving</a></h4>
+                <h4><a href="#">PharmaSaver: Your Ticket to Affordable Prescriptions</a></h4>
                 <p>Pharmacy Saving Advisor Uncovering Lowest Medication Costs</p>
                 <br>
                 <div class="button">
@@ -310,7 +310,7 @@
                 <img src="case_studies_images/hippa.webp" alt="Icon">
             </div>
             <div class="info">
-                <h4><a href="#">HIPAA</a></h4>
+                <h4><a href="#">Unlocking HIPAA: Protecting Healthcare Data</a></h4>
                 <p>Compliant and Secure Healthcare Solutions on AWS Cloud for US Healthcare with CICD</p>
                 <br>
                 <div class="button">
@@ -324,7 +324,7 @@
                 <img src="case_studies_images/ecommerce.png" alt="Icon">
             </div>
             <div class="info">
-                <h4><a href="#">E-Commerce Seller Dashboard</a></h4>
+                <h4><a href="#">Ecom360: Navigating E-Commerce with Precision</a></h4>
                 <p>Craft a Dynamic E-Commerce Seller Dashboard for Real-time Business Empowerment through Insights and Analytics</p>
                 <br>
                 <div class="button">
@@ -338,7 +338,7 @@
                 <img src="case_studies_images/scrapper-main.jpg" alt="Icon">
             </div>
             <div class="info">
-                <h4><a href="#">Scraper Optimization and Containerization Solution</a></h4>
+                <h4><a href="#">Data Dynamo: Scraper Optimization & Containerization Marvel</a></h4>
                 <p>Elevating Efficiency Scraper Optimization and Containerization Solutions</p>
                 <br>
                 <div class="button">
@@ -352,7 +352,7 @@
                 <img src="case_studies_images/kudals-ai.jpg" alt="Icon">
             </div>
             <div class="info">
-                <h4><a href="#">Unleashing the Power of AI and Big Data</a></h4>
+                <h4><a href="#">AI and Big Data Unleashed: Igniting Your Path to Success</a></h4>
                 <p>Unleashing the Power of AI and Big Data: Building Kudala's Private Multi-Tenant Cloud with Kubernetes</p>
                 <br>
                 <div class="button">

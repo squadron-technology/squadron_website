@@ -6,105 +6,77 @@
 <head>
     <style>
         /* Custom CSS for the grid */
-        /* Custom CSS for the grid */
         .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-content: flex-end;
-    padding: 20px 10px;
-}
-
-/* Add a media query for screens wider than 1024px */
-@media screen and (min-width: 1024px) {
-    .grid-container {
-        grid-template-columns: repeat(3, 1fr);
-        padding: 20px 50px;
-    }
-}
-
-/* Add a media query for screens wider than 1024px */
-@media screen and (min-width: 1024px) {
-    .grid-container {
-        grid-template-columns: repeat(3, 1fr); /* Three columns for large screens */
-        padding-left: 50px; /* Restore original padding for larger screens */
-        padding-right: 50px; /* Restore original padding for larger screens */
-    }
-}
-
-/* Custom CSS for the rest of the styles remains the same */
-.services-style-four {
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.services-style-four:hover {
-    transform: scale(1.05);
-}
-
-.services-style-four .thumb img {
-    max-width: 80px;
-    height: auto;
-}
-
-.services-style-four h4 a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.services-style-four p {
-    color: #666;
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-.button {
-  text-align: right; /* Align the button text to the right */
-}
-
-.button a {
-  display: inline-block;
-  padding: 10px 20px; /* Adjust padding as needed */
-  border: 2px solid transparent; /* Set the initial border to transparent */
-  text-decoration: none;
-  color: white !important; /* Set the text color to white by default and override conflicting styles */
-  transition: color 0.3s ease; /* Add a smooth transition for the text color change */
-  margin-left: auto; /* Push the button to the right */
-}
-
-.button a:hover {
-  border-color: transparent; /* Change the border color to transparent on hover */
-  color: black !important; /* Change the text color to black on hover */
-}
-
-
-
-
-
-
-
-/* .services-style-four .btn {
-    background-color: lightblue;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.services-style-four .btn:hover {
-    background-color: #0099cc;
-} */
-
-    </style>
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: flex-end;
+            padding: 20px 10px;
+        }
+        
+        /* Add a media query for screens wider than 1024px */
+        @media screen and (min-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr);
+                padding: 20px; /* Adjust padding for larger screens */
+                gap: 30px; /* Adjust the gap for larger screens */
+            }
+        }
+        
+        /* Custom CSS for the rest of the styles remains the same */
+        .services-style-four {
+            background-color: white; /* Change background color to white */
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .services-style-four:hover {
+            transform: scale(1.05);
+        }
+        
+        .services-style-four .thumb img {
+            max-width: 80px;
+            height: auto;
+        }
+        
+        .services-style-four h4 a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .services-style-four p {
+            margin: 0;
+            padding: 0;
+            color: #666;
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .button {
+            text-align: right;
+        }
+        
+        .button a {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            text-decoration: none;
+            color: white !important;
+            transition: color 0.3s ease;
+        }
+        
+        .button a:hover {
+            border-color: transparent;
+            color: black !important;
+        }
+        
+        </style>
+        
     
     
     
@@ -295,7 +267,7 @@
             </div>
             <div class="info">
                 <h4><a href="#">PharmaSaver: Your Ticket to Affordable Prescriptions</a></h4>
-                <p>Pharmacy Saving Advisor Uncovering Lowest Medication Costs</p>
+                <p>Discover the Ultimate Pharmacy Cost-Saving Guide: Uncovering Hidden Opportunities to Make Medications More Affordable</p>
                 <br>
                 <div class="button">
                     <a class="btn circle btn-theme-effect btn-sm" href="PharmacySaving.html">Learn More</a>
@@ -311,7 +283,7 @@
             </div>
             <div class="info">
                 <h4><a href="#">Unlocking HIPAA: Protecting Healthcare Data</a></h4>
-                <p>Compliant and Secure Healthcare Solutions on AWS Cloud for US Healthcare with CICD</p>
+                <p>Unlock the Potential of AWS Cloud Solutions: Secure Healthcare with Seamless CI/CD Compliance Integration</p>
                 <br>
                 <div class="button">
                     <a class="btn circle btn-theme-effect btn-sm" href="HIPAA.html">Learn More</a>
@@ -325,7 +297,7 @@
             </div>
             <div class="info">
                 <h4><a href="#">Ecom360: Navigating E-Commerce with Precision</a></h4>
-                <p>Craft a Dynamic E-Commerce Seller Dashboard for Real-time Business Empowerment through Insights and Analytics</p>
+                <p>Transform Your E-commerce Strategy with a Cutting-Edge Insights Dashboard: Real-time Empowerment for Sustainable Business Growth</p>
                 <br>
                 <div class="button">
                     <a class="btn circle btn-theme-effect btn-sm" href="ecommerce.html">Learn More</a>
@@ -339,7 +311,7 @@
             </div>
             <div class="info">
                 <h4><a href="#">Data Dynamo: Scraper Optimization & Containerization Marvel</a></h4>
-                <p>Elevating Efficiency Scraper Optimization and Containerization Solutions</p>
+                <p>Maximize Operational Efficiency with Cutting-Edge Scraper Optimization and Streamlined Containerization Solutions</p>
                 <br>
                 <div class="button">
                     <a class="btn circle btn-theme-effect btn-sm" href="scrapper.html">Learn More</a>
@@ -353,7 +325,7 @@
             </div>
             <div class="info">
                 <h4><a href="#">AI and Big Data Unleashed: Igniting Your Path to Success</a></h4>
-                <p>Unleashing the Power of AI and Big Data: Building Kudala's Private Multi-Tenant Cloud with Kubernetes</p>
+                <p>Unleash the Remarkable Power of AI and Big Data: Building Kudala's Private Multi-Tenant Cloud Infrastructure with Kubernetes for Unprecedented Innovation and Scalability</p>
                 <br>
                 <div class="button">
                     <a class="btn circle btn-theme-effect btn-sm" href="Kudala.html">Learn More</a>

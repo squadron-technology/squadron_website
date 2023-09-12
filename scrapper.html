@@ -198,7 +198,7 @@
                     <br>
                     <br>
                     <br>
-                    <h1>Elevating Efficiency Scraper Optimization and Containerization Solutions 
+                    <h1 style="font-size: 50px;">Elevating Efficiency Scraper Optimization and Containerization Solutions 
 
 
 
@@ -238,6 +238,7 @@
             margin: 0;
             padding: 20px;
         }
+        
         .grid-container {
             max-width: 1300px;
             margin: 0 auto;
@@ -247,7 +248,11 @@
             border-radius: 10px;
 
         }
-
+        .grid-container li {
+            font-size: 15px; /* Adjust the font size as needed */
+            color: #333; /* Adjust the text color as needed */
+            margin-bottom: 10px; /* Adjust the bottom margin as needed */
+        }
         .grid-container h1,
         .grid-container h2 {
             text-align: center;
@@ -262,23 +267,22 @@
             margin-top: 20px;
             border: 2px solid #000;
         }
-
         .grid-container h1 {
-            font-size: 36px;
-            color: black;
-            margin-top: 20px;
-            text-align: left;
-        }
-
-        .grid-container h2 {
-            font-size: 30px;
-            color: #555;
-            margin-top: 20px;
-            text-align: left;
-        }
-
+font-size: 36px;
+color: black;
+margin-top: 20px;
+text-align: center;
+font-weight: bold;
+}
+.grid-container h2 {
+font-size: 30px;
+color: #555;
+margin-top: 20px;
+text-align: left;
+font-weight: bold;
+}
         .grid-container p {
-            font-size: 20px;
+            font-size: 15px;
             color: #666;
             line-height: 1.6;
             margin-bottom: 30px;
@@ -306,7 +310,10 @@
 </head>
 <body>
     <div class="grid-container">
-        <h1>Challenges Faced:</h1>
+        <h2>Introduction:
+        </h2>
+        <p>In this comprehensive blog post, we delve into the intricacies of "Elevating Efficiency: Scraper Optimization and Containerization Solutions." This insightful exploration navigates through the challenges encountered, the ingenious solutions devised, and the transformative impact of optimizing a web scraper for enhanced efficiency. From outdated data retrieval to inconsistent performance, extended processing times, and the absence of cloud deployment, we dissect the hurdles faced and the innovative steps taken to overcome them. Discover how modularization, AWS integration, automated pipelines, PostgreSQL, and cloud deployment converged to elevate scraper efficiency. Join us on this transformative journey towards streamlining web scraping processes for superior performance and productivity.</p>
+        <h2>Challenges Faced:</h2>
         <ul style="list-style-type:disc;">
             <li><strong>Outdated Data Retrieval:</strong> Our existing scraper, built with the Scrapy module in Python, faced difficulties in keeping data current in Elasticsearch.</li>
             <li><strong>Inconsistent Performance:</strong> The scraper's functionality was compromised, resulting in inadequate data extraction and processing.</li>

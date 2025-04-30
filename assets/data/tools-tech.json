@@ -4,17 +4,17 @@
         "items": [
             {
                 "title": "AWS",
-                "icon": "aws.svg",
+                "icon": "assets/img/tech/cloud/aws.png",
                 "url": "https://aws.amazon.com/"
             },
             {
                 "title": "Azure",
-                "icon": "azure.svg",
+                "icon": "assets/img/tech/cloud/azure.png",
                 "url": "https://azure.microsoft.com/"
             },
             {
                 "title": "GCP",
-                "icon": "gcp.svg",
+                "icon": "assets/img/tech/cloud/gcp.png",
                 "url": "https://cloud.google.com/"
             }
         ]
@@ -24,102 +24,102 @@
         "items": [
             {
                 "title": "Python",
-                "icon": "python.svg",
+                "icon": "assets/img/tech/programming/python.png",
                 "url": "https://www.python.org/"
             },
             {
                 "title": "Java",
-                "icon": "java.svg",
+                "icon": "assets/img/tech/programming/java.png",
                 "url": "https://www.java.com/"
             },
             {
                 "title": "Microsoft .NET",
-                "icon": "dotnet.svg",
+                "icon": "assets/img/tech/programming/dotnet.png",
                 "url": "https://dotnet.microsoft.com/"
             },
             {
                 "title": "GO",
-                "icon": "go.svg",
+                "icon": "assets/img/tech/programming/go.png",
                 "url": "https://go.dev/"
             },
             {
                 "title": "React",
-                "icon": "react.svg",
+                "icon": "assets/img/tech/programming/react.png",
                 "url": "https://reactjs.org/"
             },
             {
                 "title": "Node.js",
-                "icon": "nodejs.svg",
+                "icon": "assets/img/tech/programming/nodejs.png",
                 "url": "https://nodejs.org/"
             },
             {
                 "title": "Angular",
-                "icon": "angular.svg",
+                "icon": "assets/img/tech/programming/angular.png",
                 "url": "https://angular.io/"
             },
             {
                 "title": "JavaScript",
-                "icon": "javascript.svg",
+                "icon": "assets/img/tech/programming/javascript.png",
                 "url": "https://www.javascript.com/"
             },
             {
                 "title": "MySQL",
-                "icon": "mysql.svg",
+                "icon": "assets/img/tech/programming/mysql.png",
                 "url": "https://www.mysql.com/"
             },
             {
                 "title": "PostgreSQL",
-                "icon": "postgresql.svg",
+                "icon": "assets/img/tech/programming/postgresql.png",
                 "url": "https://www.postgresql.org/"
             },
             {
                 "title": "MongoDB",
-                "icon": "mongodb.svg",
+                "icon": "assets/img/tech/programming/mongodb.png",
                 "url": "https://www.mongodb.com/"
             },
             {
                 "title": "Elastic",
-                "icon": "elastic.svg",
+                "icon": "assets/img/tech/programming/elastic.png",
                 "url": "https://www.elastic.co/"
             },
             {
                 "title": "FastAPI",
-                "icon": "fastapi.svg",
+                "icon": "assets/img/tech/programming/fastapi.png",
                 "url": "https://fastapi.tiangolo.com/"
             },
             {
                 "title": "Docker",
-                "icon": "docker.svg",
+                "icon": "assets/img/tech/programming/docker.png",
                 "url": "https://www.docker.com/"
             },
             {
                 "title": "NGINX",
-                "icon": "nginx.svg",
+                "icon": "assets/img/tech/programming/nginx.png",
                 "url": "https://www.nginx.com/"
             },
             {
                 "title": "Salesforce",
-                "icon": "salesforce.svg",
+                "icon": "assets/img/tech/programming/salesforce.png",
                 "url": "https://www.salesforce.com/"
             },
             {
                 "title": "GitHub",
-                "icon": "github.svg",
+                "icon": "assets/img/tech/programming/github.png",
                 "url": "https://github.com/"
             },
             {
                 "title": "Jira",
-                "icon": "jira.svg",
+                "icon": "assets/img/tech/programming/jira.png",
                 "url": "https://www.atlassian.com/software/jira"
             },
             {
                 "title": "Confluence",
-                "icon": "confluence.svg",
+                "icon": "assets/img/tech/programming/confluence.png",
                 "url": "https://www.atlassian.com/software/confluence"
             },
             {
                 "title": "ETL Pipelines",
-                "icon": "etl.svg",
+                "icon": "assets/img/tech/programming/etl.png",
                 "url": "https://en.wikipedia.org/wiki/Extract,_transform,_load"
             }
         ]
@@ -129,107 +129,107 @@
         "items": [
             {
                 "title": "Databricks",
-                "icon": "databricks.svg",
+                "icon": "assets/img/tech/etl/databricks.png",
                 "url": "https://www.databricks.com/"
             },
             {
                 "title": "Apache Spark",
-                "icon": "spark.svg",
+                "icon": "assets/img/tech/etl/spark.png",
                 "url": "https://spark.apache.org/"
             },
             {
                 "title": "Apache Airflow",
-                "icon": "airflow.svg",
+                "icon": "assets/img/tech/etl/airflow.png",
                 "url": "https://airflow.apache.org/"
             },
             {
                 "title": "dbt",
-                "icon": "dbt.svg",
+                "icon": "assets/img/tech/etl/dbt.png",
                 "url": "https://www.getdbt.com/"
             },
             {
                 "title": "Amazon Redshift",
-                "icon": "redshift.svg",
+                "icon": "assets/img/tech/etl/redshift.png",
                 "url": "https://aws.amazon.com/redshift/"
             },
             {
                 "title": "Snowflake",
-                "icon": "snowflake.svg",
+                "icon": "assets/img/tech/etl/snowflake.png",
                 "url": "https://www.snowflake.com/"
             },
             {
                 "title": "BigQuery",
-                "icon": "bigquery.svg",
+                "icon": "assets/img/tech/etl/bigquery.png",
                 "url": "https://cloud.google.com/bigquery"
             },
             {
                 "title": "Pandas",
-                "icon": "pandas.svg",
+                "icon": "assets/img/tech/etl/pandas.png",
                 "url": "https://pandas.pydata.org/"
             },
             {
                 "title": "Azure Data Factory",
-                "icon": "azure-data-factory.svg",
+                "icon": "assets/img/tech/etl/azure-data-factory.png",
                 "url": "https://azure.microsoft.com/en-us/services/data-factory/"
             },
             {
                 "title": "Druid",
-                "icon": "druid.svg",
+                "icon": "assets/img/tech/etl/druid.png",
                 "url": "https://druid.apache.org/"
             },
             {
                 "title": "Ray",
-                "icon": "ray.svg",
+                "icon": "assets/img/tech/etl/ray.png",
                 "url": "https://www.ray.io/"
             },
             {
                 "title": "Google DataFlow",
-                "icon": "dataflow.svg",
+                "icon": "assets/img/tech/etl/dataflow.png",
                 "url": "https://cloud.google.com/dataflow"
             },
             {
                 "title": "AWS Glue",
-                "icon": "glue.svg",
+                "icon": "assets/img/tech/etl/aws-glue.png",
                 "url": "https://aws.amazon.com/glue/"
             },
             {
                 "title": "Apache NiFi",
-                "icon": "nifi.svg",
+                "icon": "assets/img/tech/etl/nifi.png",
                 "url": "https://nifi.apache.org/"
             },
             {
                 "title": "StreamSets",
-                "icon": "streamsets.svg",
+                "icon": "assets/img/tech/etl/streamsets.png",
                 "url": "https://streamsets.com/"
             },
             {
                 "title": "Appian",
-                "icon": "appian.svg",
+                "icon": "assets/img/tech/etl/appian.png",
                 "url": "https://www.appian.com/"
             },
             {
                 "title": "MuleSoft",
-                "icon": "mulesoft.svg",
+                "icon": "assets/img/tech/etl/mulesoft.png",
                 "url": "https://www.mulesoft.com/"
             },
             {
                 "title": "Airbyte",
-                "icon": "airbyte.svg",
+                "icon": "assets/img/tech/etl/airbyte.png",
                 "url": "https://airbyte.com/"
             },
             {
                 "title": "Fivetran",
-                "icon": "fivetran.svg",
+                "icon": "assets/img/tech/etl/fivetran.png",
                 "url": "https://www.fivetran.com/"
             },
             {
                 "title": "Stitch",
-                "icon": "stitch.svg",
+                "icon": "assets/img/tech/etl/stitch.png",
                 "url": "https://www.stitchdata.com/"
             },
             {
                 "title": "Selenium",
-                "icon": "selenium.svg",
+                "icon": "assets/img/tech/etl/selenium.png",
                 "url": "https://www.selenium.dev/"
             }
         ]
@@ -239,22 +239,22 @@
         "items": [
             {
                 "title": "Amazon Kinesis",
-                "icon": "kinesis.svg",
+                "icon": "assets/img/tech/streaming/kinesis.png",
                 "url": "https://pulsar.apache.org/"
             },
             {
                 "title": "Kafka",
-                "icon": "kafka.svg",
+                "icon": "assets/img/tech/streaming/kafka.png",
                 "url": "https://storm.apache.org/"
             },
             {
                 "title": "Cloud Pub/Sub",
-                "icon": "pubsub.svg",
+                "icon": "assets/img/tech/streaming/pubsub.png",
                 "url": "https://samza.apache.org/"
             },
             {
-                "title": "Confluence",
-                "icon": "confluence.svg",
+                "title": "Confluent",
+                "icon": "assets/img/tech/streaming/confluent.png",
                 "url": "https://samza.apache.org/"
             }
         ]
@@ -319,22 +319,22 @@
         "items": [
             {
                 "title": "Tableau",
-                "icon": "tableau.svg",
+                "icon": "assets/img/tech/bi-reporting/tableau.png",
                 "url": "https://www.tableau.com/"
             },
             {
                 "title": "Power BI",
-                "icon": "powerbi.svg",
+                "icon": "assets/img/tech/bi-reporting/power-bi.png",
                 "url": "https://powerbi.microsoft.com/"
             },
             {
                 "title": "Amzon Quicksight",
-                "icon": "quicksight.svg",
+                "icon": "assets/img/tech/bi-reporting/amazon-quicksight.png",
                 "url": "https://aws.amazon.com/quicksight/"
             },
             {
                 "title": "Metabase",
-                "icon": "metabase.svg",
+                "icon": "assets/img/tech/bi-reporting/metabase.png",
                 "url": "https://www.metabase.com/"
             }
         ]
@@ -344,42 +344,42 @@
         "items": [
             {
                 "title": "Serverless",
-                "icon": "serverless.svg",
+                "icon": "assets/img/tech/devops/serverless.png",
                 "url": "https://www.terraform.io/"
             },
             {
                 "title": "Kubernetes",
-                "icon": "kubernetes.svg",
+                "icon": "assets/img/tech/devops/kubernates.png",
                 "url": "https://kubernetes.io/"
             },
             {
                 "title": "Terraform",
-                "icon": "terraform.svg",
+                "icon": "assets/img/tech/devops/terraform.png",
                 "url": "https://www.terraform.io/"
             },
             {
                 "title": "Dynatrace",
-                "icon": "dynatrace.svg",
+                "icon": "assets/img/tech/devops/dynatrace.png",
                 "url": "https://www.terraform.io/"
             },
             {
                 "title": "DataDog",
-                "icon": "datadog.svg",
+                "icon": "assets/img/tech/devops/datadog.png",
                 "url": "https://www.terraform.io/"
             },
             {
                 "title": "Kibana",
-                "icon": "kibana.svg",
+                "icon": "assets/img/tech/devops/kibana.png",
                 "url": "https://www.ansible.com/"
             },
             {
                 "title": "New Relic",
-                "icon": "newrelic.svg",
+                "icon": "assets/img/tech/devops/new-relic.png",
                 "url": "https://prometheus.io/"
             },
             {
                 "title": "Grafana",
-                "icon": "grafana.svg",
+                "icon": "assets/img/tech/devops/grafana.png",
                 "url": "https://grafana.com/"
             }
         ]

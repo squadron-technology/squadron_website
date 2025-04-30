@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  getNavigationServices()
   getServices();
   getToolsAndTech();
   getCertificates()
@@ -31,7 +32,7 @@ function getToolsAndTech() {
           const itemSlug = convertToSlug(item.title);
           let itemHtml = `<div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
           <div class="features-item">
-            <i class="bi bi-eye" style="color: #ffbb2c;"></i>
+            <img src="${item.icon}" style="height: 32px;width: 42px;"class="img-fluid" alt="${item.title}">
             <h3><a href="#${itemSlug}" class="stretched-link">${item.title}</a></h3>
           </div>
         </div> `;
@@ -42,10 +43,37 @@ function getToolsAndTech() {
     .catch((error) => console.error("Error loading:", error));
 }
 
+function getNavigationServices() {
+  const servicesMenu = document.getElementById("services-list");
+  // Fetch services data from JSON
+  fetchData("assets/data/services.json")
+    .then((categories) => {
+      // Sort categories by the 'order' field
+      categories.sort((a, b) => a.order - b.order);
+      categories.forEach((category) => {
+        // Convert category name to slug for IDs and links
+        const categorySlug = convertToSlug(category.category);
+        // Create a category title
+        let categoryMenuHTML = `
+        <li class="dropdown">
+            <a href="#${categorySlug}"><span>${category.category}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+        `;
+        // Render services within the category
+        category.services.forEach((service) => {
+          const serviceSlug = convertToSlug(service.title);
+          categoryMenuHTML += `<li><a href="#${serviceSlug}">${service.title}</a></li>`;
+        });
+        categoryMenuHTML += `</ul></li>`;
+        servicesMenu.innerHTML += categoryMenuHTML;
+      });
+    })
+    .catch((error) => console.error("Error loading services:", error));
+}
+
 // Function to fetch and display services also including top menu of services with categories
 function getServices() {
   const servicesContainer = document.getElementById("services-container");
-  const servicesMenu = document.getElementById("services-list");
   // Fetch services data from JSON
   fetchData("assets/data/services.json")
     .then((categories) => {
@@ -60,16 +88,11 @@ function getServices() {
           <h3 class="category-title">${category.category}</h3>
         </div>
       `;
-        let categoryMenuHTML = `
-        <li class="dropdown">
-            <a href="#${categorySlug}"><span>${category.category}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-        `;
         servicesContainer.innerHTML += categoryTitleHTML;
         // Render services within the category
         category.services.forEach((service, index) => {
           const serviceSlug = convertToSlug(service.title);
-          categoryMenuHTML += `<li><a href="#${serviceSlug}">${service.title}</a></li>`;
+          // categoryMenuHTML += `<li><a href="#${serviceSlug}">${service.title}</a></li>`;
           const delay = (index + 1) * 100; // Incremental delay for animations
           const serviceHTML = `
           <div id="${serviceSlug}" class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="${delay}">
@@ -84,8 +107,6 @@ function getServices() {
         `;
           servicesContainer.innerHTML += serviceHTML;
         });
-        categoryMenuHTML += `</ul></li>`;
-        servicesMenu.innerHTML += categoryMenuHTML;
       });
     })
     .catch((error) => console.error("Error loading services:", error));
@@ -125,7 +146,7 @@ function getCaseStudies() {
                 <img src="${caseStudy.image}" class="img-fluid" alt="${caseStudy.title}">
               </div>
               <div class="details">
-                <a href="service-details.html" class="stretched-link">
+                <a href="${caseStudy.link}" class="stretched-link">
                   <h3>${caseStudy.title}</h3>
                 </a>
                 <p>${caseStudy.description}</p>

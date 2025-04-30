@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   getServices();
   getToolsAndTech();
   getCertificates()
+  getStats()
+  getCaseStudies();
 });
 
 // Function to fetch and display tools and technologies with categories
@@ -87,6 +89,53 @@ function getServices() {
       });
     })
     .catch((error) => console.error("Error loading services:", error));
+}
+
+function getStats() {
+  const statsContainer = document.getElementById("stats-container");
+   // Fetch certificates data from JSON
+   fetchData("assets/data/stats.json")
+   .then((stats) => {
+    stats.forEach((stat, index) => {
+      statsContainer.innerHTML += `
+          <div class="col-lg-6">
+            <div class="stats-item d-flex">
+              <i class="${stat.icon} flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="${stat.value}" data-purecounter-duration="1" class="purecounter">${stat.value}+</span>
+                <p><strong>${stat.title}</strong></p>
+              </div>
+            </div>
+          </div>
+    `
+     })
+    }).catch((error) => console.error("Error loading Stats:", error));
+}
+
+function getCaseStudies() {
+  const caseStudiesContainer = document.getElementById("case-studies-container");
+  // Fetch case studies data from JSON
+  fetchData("assets/data/case-studies.json")
+    .then((caseStudies) => {
+      caseStudies.forEach((caseStudy, index) => {
+        let caseStudyHTML = `
+           <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="img">
+                <img src="${caseStudy.image}" class="img-fluid" alt="${caseStudy.title}">
+              </div>
+              <div class="details">
+                <a href="service-details.html" class="stretched-link">
+                  <h3>${caseStudy.title}</h3>
+                </a>
+                <p>${caseStudy.description}</p>
+              </div>
+            </div>
+          </div>`;
+        caseStudiesContainer.innerHTML += caseStudyHTML;
+      });
+    })
+    .catch((error) => console.error("Error loading case studies:", error));
 }
 
 function getCertificates() {

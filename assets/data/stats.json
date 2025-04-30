@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "bi bi-journal-richtext",
+    "value": 70,
+    "title": "Experienced Professionals"
+  },
+  {
+    "icon": "bi bi-journal-richtext",
+    "value": 160,
+    "title": "Years of Combined Experience"
+  },
+  {
+    "icon": "bi bi-journal-richtext",
+    "value": 310,
+    "title": "Projects Delivered"
+  },
+  {
+    "icon": "bi bi-journal-richtext",
+    "value": 100,
+    "title": "Tools Hands-on Experience"
+  },
+  {
+    "icon": "bi bi-graph-up-arrow",
+    "value": 50,
+    "title": "Certifications"
+  },
+  {
+    "icon": "bi bi-people",
+    "value": 40,
+    "title": "Clients"
+  }
+]

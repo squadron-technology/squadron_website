@@ -1,0 +1,213 @@
+[
+    {
+      "order": 1,
+      "category": "Advance AI & Machine Learning",
+      "services": [
+        {
+          "title": "Predictive Analytics",
+          "description": "Uses historical data, statistical algorithms, and machine learning techniques to identify future outcomes.",
+          "icon": "🔮"
+        },
+        {
+          "title": "Natural Language Processing",
+          "description": "Enables machines to read, understand, and respond in human language using text and voice.",
+          "icon": "🗣"
+        },
+        {
+          "title": "Computer Vision",
+          "description": "Automates image and video analysis, enabling machines to interpret visual information.",
+          "icon": "🧠"
+        },
+        {
+          "title": "Recommendation Systems",
+          "description": "Suggests relevant items to users using behavioral and preference data.",
+          "icon": "🎯"
+        },
+        {
+          "title": "Anomaly Detection",
+          "description": "Identifies abnormal patterns or behaviors in data for risk mitigation.",
+          "icon": "🚨"
+        },
+        {
+          "title": "MLOps",
+          "description": "Streamlines ML model deployment, monitoring, and governance in production.",
+          "icon": "⚙"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "category": "Data Engineering (ETL/ELT/Streaming)",
+      "services": [
+        {
+          "title": "Data Pipeline Development",
+          "description": "Designs and implements data pipelines to enable data flow across systems.",
+          "icon": "📊"
+        },
+        {
+          "title": "ETL/ELT Process Implementation",
+          "description": "Automates data extraction, transformation, and loading for analytics use.",
+          "icon": "⚙"
+        },
+        {
+          "title": "Web Scraping",
+          "description": "Collects structured data from websites for business insights and automation.",
+          "icon": "🏛"
+        },
+        {
+          "title": "Real-Time Data Processing",
+          "description": "Processes data as it’s generated to deliver instant insights and reactions.",
+          "icon": "⚡"
+        },
+        {
+          "title": "Business Intelligence Solutions",
+          "description": "Provides tools and systems for data-driven decision-making and reporting.",
+          "icon": "📈"
+        },
+        {
+          "title": "Data Governance & Quality",
+          "description": "Ensures data integrity, security, and compliance across the organization.",
+          "icon": "🛡"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "category": "Cloud Infrastructure & DevSecOps",
+      "services": [
+        {
+          "title": "Cloud Migration Strategy",
+          "description": "Plans and executes the transfer of infrastructure and services to the cloud.",
+          "icon": "🚀"
+        },
+        {
+          "title": "Infrastructure as Code (IaC)",
+          "description": "Automates infrastructure provisioning using machine-readable configuration files.",
+          "icon": "🧾"
+        },
+        {
+          "title": "Multi-Cloud Management",
+          "description": "Coordinates services and resources across multiple cloud environments.",
+          "icon": "🌐"
+        },
+        {
+          "title": "Cloud Security Implementation",
+          "description": "Protects cloud-based systems and data with robust security practices.",
+          "icon": "🔒"
+        },
+        {
+          "title": "Cost Optimization",
+          "description": "Reduces cloud expenses by identifying and eliminating unnecessary resources.",
+          "icon": "💸"
+        },
+        {
+          "title": "24/7 Managed Cloud Services",
+          "description": "Provides continuous monitoring, maintenance, and support for cloud infrastructure.",
+          "icon": "🕐"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "category": "Software Engineering",
+      "services": [
+        {
+          "title": "Custom Application Development",
+          "description": "Builds tailored software to meet unique business needs and workflows.",
+          "icon": "🧩"
+        },
+        {
+          "title": "Legacy System Modernization",
+          "description": "Updates outdated systems to modern platforms and architectures.",
+          "icon": "♻"
+        },
+        {
+          "title": "API Development & Integration",
+          "description": "Creates and connects APIs to facilitate system interoperability and data exchange.",
+          "icon": "🔗"
+        },
+        {
+          "title": "DevOps Implementation",
+          "description": "Integrates development and operations to enable continuous delivery and faster releases.",
+          "icon": "🚀"
+        },
+        {
+          "title": "Quality Assurance & Testing",
+          "description": "Ensures software reliability and performance through rigorous testing processes.",
+          "icon": "✅"
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "category": "Business Reporting",
+      "services": [
+        {
+          "title": "Custom Dashboard Development",
+          "description": "Creates tailored dashboards for tracking and visualizing key business metrics.",
+          "icon": "🧩"
+        },
+        {
+          "title": "Multi-Source Data Integration",
+          "description": "Combines data from different systems into a unified view for analysis.",
+          "icon": "🔗"
+        },
+        {
+          "title": "Self-Service BI Enablement",
+          "description": "Empowers users to access and explore data without relying on IT.",
+          "icon": "🛠"
+        },
+        {
+          "title": "Real-Time & Scheduled Reporting",
+          "description": "Delivers insights when needed through real-time or scheduled reports.",
+          "icon": "⏱"
+        },
+        {
+          "title": "Data Modelling & Transformation",
+          "description": "Shapes data structures to support analytics and reporting needs.",
+          "icon": "🧱"
+        },
+        {
+          "title": "User Access Control & Governance",
+          "description": "Manages user roles and data permissions to ensure security and compliance.",
+          "icon": "🔐"
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "category": "Customer Relationship Management",
+      "services": [
+        {
+          "title": "CRM Implementation & Setup",
+          "description": "Configures CRM tools to track customer interactions and improve engagement.",
+          "icon": "⚙"
+        },
+        {
+          "title": "CRM Integration",
+          "description": "Connects CRM systems with other tools for seamless data flow and automation.",
+          "icon": "🔄"
+        },
+        {
+          "title": "Sales & Pipeline Management",
+          "description": "Tracks leads, opportunities, and deals to enhance sales performance.",
+          "icon": "📈"
+        },
+        {
+          "title": "Customer Support & Service Automation",
+          "description": "Automates support processes to enhance customer service and satisfaction.",
+          "icon": "📞"
+        },
+        {
+          "title": "Reporting & Analytics",
+          "description": "Provides insights into customer behavior, support performance, and CRM usage.",
+          "icon": "📊"
+        },
+        {
+          "title": "User Training & Support",
+          "description": "Trains staff and provides ongoing support to maximize CRM effectiveness.",
+          "icon": "🛠"
+        }
+      ]
+    }
+  ]

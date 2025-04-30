@@ -1,0 +1,66 @@
+[
+  {
+    "title": "AWS Certified Solutions Architect - Associate",
+    "icon": "aws-certified-solutions-architect-associate.png"
+  },
+  {
+    "title": "AWS Certified Developer - Associate",
+    "icon": "aws-certified-developer-associate.png"
+  },
+  {
+    "title": "AWS Certified SysOps Administrator - Associate",
+    "icon": "aws-certified-sysops-administrator-associate.png"
+  },
+  {
+    "title": "AWS Certified Solutions Architect - Professional",
+    "icon": "aws-certified-solutions-architect-professional.png"
+  },
+  {
+    "title": "AWS Certified DevOps Engineer - Professional",
+    "icon": "aws-certified-devops-engineer-professional.png"
+  },
+  {
+    "title": "AWS Certified Cloud Practitioner",
+    "icon": "aws-certified-cloud-practitioner.png"
+  },
+  {
+    "title": "AWS Certified Advanced Networking - Specialty",
+    "icon": "aws-certified-advanced-networking-specialty.png"
+  },
+  {
+    "title": "AWS Certified Security - Specialty",
+    "icon": "aws-certified-security-specialty.png"
+  },
+  {
+    "title": "AWS Certified Machine Learning - Specialty",
+    "icon": "aws-certified-machine-learning-specialty.png"
+  },
+  {
+    "title": "AWS Certified Database - Specialty",
+    "icon": "aws-certified-database-specialty.png"
+  },
+  {
+    "title": "AWS Certified Data Analytics - Specialty",
+    "icon": "aws-certified-data-analytics-specialty.png"
+  },
+  {
+    "title": "AWS Certified SAP on AWS - Specialty",
+    "icon": "aws-certified-sap-on-aws-specialty.png"
+  },
+  {
+    "title": "AWS Certified Alexa Skill Builder - Specialty",
+    "icon": "aws-certified-alexa-skill-builder-specialty.png"
+  },
+  {
+    "title": "AWS Certified Machine Learning - Specialty",
+    "icon": "aws-certified-machine-learning-specialty.png"
+  },
+  {
+    "title": "AWS Certified Database - Specialty",
+    "icon": "aws-certified-database-specialty.png"
+  },
+  {
+    "title": "AWS Certified Data Analytics - Specialty",
+    "icon": "aws-certified-data-analytics-specialty.png"
+  }
+]

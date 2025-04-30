@@ -1,0 +1,387 @@
+[
+    {
+        "category": "Cloud Expertise ",
+        "items": [
+            {
+                "title": "AWS",
+                "icon": "aws.svg",
+                "url": "https://aws.amazon.com/"
+            },
+            {
+                "title": "Azure",
+                "icon": "azure.svg",
+                "url": "https://azure.microsoft.com/"
+            },
+            {
+                "title": "GCP",
+                "icon": "gcp.svg",
+                "url": "https://cloud.google.com/"
+            }
+        ]
+    },
+    {
+        "category": "Software Development",
+        "items": [
+            {
+                "title": "Python",
+                "icon": "python.svg",
+                "url": "https://www.python.org/"
+            },
+            {
+                "title": "Java",
+                "icon": "java.svg",
+                "url": "https://www.java.com/"
+            },
+            {
+                "title": "Microsoft .NET",
+                "icon": "dotnet.svg",
+                "url": "https://dotnet.microsoft.com/"
+            },
+            {
+                "title": "GO",
+                "icon": "go.svg",
+                "url": "https://go.dev/"
+            },
+            {
+                "title": "React",
+                "icon": "react.svg",
+                "url": "https://reactjs.org/"
+            },
+            {
+                "title": "Node.js",
+                "icon": "nodejs.svg",
+                "url": "https://nodejs.org/"
+            },
+            {
+                "title": "Angular",
+                "icon": "angular.svg",
+                "url": "https://angular.io/"
+            },
+            {
+                "title": "JavaScript",
+                "icon": "javascript.svg",
+                "url": "https://www.javascript.com/"
+            },
+            {
+                "title": "MySQL",
+                "icon": "mysql.svg",
+                "url": "https://www.mysql.com/"
+            },
+            {
+                "title": "PostgreSQL",
+                "icon": "postgresql.svg",
+                "url": "https://www.postgresql.org/"
+            },
+            {
+                "title": "MongoDB",
+                "icon": "mongodb.svg",
+                "url": "https://www.mongodb.com/"
+            },
+            {
+                "title": "Elastic",
+                "icon": "elastic.svg",
+                "url": "https://www.elastic.co/"
+            },
+            {
+                "title": "FastAPI",
+                "icon": "fastapi.svg",
+                "url": "https://fastapi.tiangolo.com/"
+            },
+            {
+                "title": "Docker",
+                "icon": "docker.svg",
+                "url": "https://www.docker.com/"
+            },
+            {
+                "title": "NGINX",
+                "icon": "nginx.svg",
+                "url": "https://www.nginx.com/"
+            },
+            {
+                "title": "Salesforce",
+                "icon": "salesforce.svg",
+                "url": "https://www.salesforce.com/"
+            },
+            {
+                "title": "GitHub",
+                "icon": "github.svg",
+                "url": "https://github.com/"
+            },
+            {
+                "title": "Jira",
+                "icon": "jira.svg",
+                "url": "https://www.atlassian.com/software/jira"
+            },
+            {
+                "title": "Confluence",
+                "icon": "confluence.svg",
+                "url": "https://www.atlassian.com/software/confluence"
+            },
+            {
+                "title": "ETL Pipelines",
+                "icon": "etl.svg",
+                "url": "https://en.wikipedia.org/wiki/Extract,_transform,_load"
+            }
+        ]
+    },
+    {
+        "category": "Data Engineering & ETL",
+        "items": [
+            {
+                "title": "Databricks",
+                "icon": "databricks.svg",
+                "url": "https://www.databricks.com/"
+            },
+            {
+                "title": "Apache Spark",
+                "icon": "spark.svg",
+                "url": "https://spark.apache.org/"
+            },
+            {
+                "title": "Apache Airflow",
+                "icon": "airflow.svg",
+                "url": "https://airflow.apache.org/"
+            },
+            {
+                "title": "dbt",
+                "icon": "dbt.svg",
+                "url": "https://www.getdbt.com/"
+            },
+            {
+                "title": "Amazon Redshift",
+                "icon": "redshift.svg",
+                "url": "https://aws.amazon.com/redshift/"
+            },
+            {
+                "title": "Snowflake",
+                "icon": "snowflake.svg",
+                "url": "https://www.snowflake.com/"
+            },
+            {
+                "title": "BigQuery",
+                "icon": "bigquery.svg",
+                "url": "https://cloud.google.com/bigquery"
+            },
+            {
+                "title": "Pandas",
+                "icon": "pandas.svg",
+                "url": "https://pandas.pydata.org/"
+            },
+            {
+                "title": "Azure Data Factory",
+                "icon": "azure-data-factory.svg",
+                "url": "https://azure.microsoft.com/en-us/services/data-factory/"
+            },
+            {
+                "title": "Druid",
+                "icon": "druid.svg",
+                "url": "https://druid.apache.org/"
+            },
+            {
+                "title": "Ray",
+                "icon": "ray.svg",
+                "url": "https://www.ray.io/"
+            },
+            {
+                "title": "Google DataFlow",
+                "icon": "dataflow.svg",
+                "url": "https://cloud.google.com/dataflow"
+            },
+            {
+                "title": "AWS Glue",
+                "icon": "glue.svg",
+                "url": "https://aws.amazon.com/glue/"
+            },
+            {
+                "title": "Apache NiFi",
+                "icon": "nifi.svg",
+                "url": "https://nifi.apache.org/"
+            },
+            {
+                "title": "StreamSets",
+                "icon": "streamsets.svg",
+                "url": "https://streamsets.com/"
+            },
+            {
+                "title": "Appian",
+                "icon": "appian.svg",
+                "url": "https://www.appian.com/"
+            },
+            {
+                "title": "MuleSoft",
+                "icon": "mulesoft.svg",
+                "url": "https://www.mulesoft.com/"
+            },
+            {
+                "title": "Airbyte",
+                "icon": "airbyte.svg",
+                "url": "https://airbyte.com/"
+            },
+            {
+                "title": "Fivetran",
+                "icon": "fivetran.svg",
+                "url": "https://www.fivetran.com/"
+            },
+            {
+                "title": "Stitch",
+                "icon": "stitch.svg",
+                "url": "https://www.stitchdata.com/"
+            },
+            {
+                "title": "Selenium",
+                "icon": "selenium.svg",
+                "url": "https://www.selenium.dev/"
+            }
+        ]
+    },
+    {
+        "category": "Streaming Ecosystem",
+        "items": [
+            {
+                "title": "Amazon Kinesis",
+                "icon": "kinesis.svg",
+                "url": "https://pulsar.apache.org/"
+            },
+            {
+                "title": "Kafka",
+                "icon": "kafka.svg",
+                "url": "https://storm.apache.org/"
+            },
+            {
+                "title": "Cloud Pub/Sub",
+                "icon": "pubsub.svg",
+                "url": "https://samza.apache.org/"
+            },
+            {
+                "title": "Confluence",
+                "icon": "confluence.svg",
+                "url": "https://samza.apache.org/"
+            }
+        ]
+    },
+    {
+        "category": "AI/Machine Learning",
+        "items": [
+            {
+                "title": "Amazon Bedrock",
+                "icon": "bedrock.svg",
+                "url": "https://aws.amazon.com/bedrock/"
+            },
+            {
+                "title": "Azure AI Services",
+                "icon": "azure-ai.svg",
+                "url": "https://azure.microsoft.com/en-us/products/machine-learning/"
+            },
+            {
+                "title": "Vertex AI",
+                "icon": "vertex-ai.svg",
+                "url": "https://cloud.google.com/vertex-ai"
+            },
+            {
+                "title": "ChatGPT",
+                "icon": "chatgpt.svg",
+                "url": "https://openai.com/chatgpt"
+            },
+            {
+                "title": "Amazon SageMaker",
+                "icon": "sagemaker.svg",
+                "url": "https://aws.amazon.com/sagemaker/"
+            },
+            {
+                "title": "Predictive Analytics",
+                "icon": "predictive-analytics.svg",
+                "url": "https://en.wikipedia.org/wiki/Predictive_analytics"
+            },
+            {
+                "title": "Natural Language Processing",
+                "icon": "nlp.svg",
+                "url": "https://en.wikipedia.org/wiki/Natural_language_processing"
+            },
+            {
+                "title": "TensorFlow",
+                "icon": "tensorflow.svg",
+                "url": "https://www.tensorflow.org/"
+            },
+            {
+                "title": "MLOps",
+                "icon": "mlops.svg",
+                "url": "https://ml-ops.org/"
+            },
+            {
+                "title": "XGBoost",
+                "icon": "xgboost.svg",
+                "url": "https://xgboost.readthedocs.io/"
+            }
+        ]
+    },
+    {
+        "category": "BI Reporting",
+        "items": [
+            {
+                "title": "Tableau",
+                "icon": "tableau.svg",
+                "url": "https://www.tableau.com/"
+            },
+            {
+                "title": "Power BI",
+                "icon": "powerbi.svg",
+                "url": "https://powerbi.microsoft.com/"
+            },
+            {
+                "title": "Amzon Quicksight",
+                "icon": "quicksight.svg",
+                "url": "https://aws.amazon.com/quicksight/"
+            },
+            {
+                "title": "Metabase",
+                "icon": "metabase.svg",
+                "url": "https://www.metabase.com/"
+            }
+        ]
+    },
+    {
+        "category": "DevSecOps and Telementry",
+        "items": [
+            {
+                "title": "Serverless",
+                "icon": "serverless.svg",
+                "url": "https://www.terraform.io/"
+            },
+            {
+                "title": "Kubernetes",
+                "icon": "kubernetes.svg",
+                "url": "https://kubernetes.io/"
+            },
+            {
+                "title": "Terraform",
+                "icon": "terraform.svg",
+                "url": "https://www.terraform.io/"
+            },
+            {
+                "title": "Dynatrace",
+                "icon": "dynatrace.svg",
+                "url": "https://www.terraform.io/"
+            },
+            {
+                "title": "DataDog",
+                "icon": "datadog.svg",
+                "url": "https://www.terraform.io/"
+            },
+            {
+                "title": "Kibana",
+                "icon": "kibana.svg",
+                "url": "https://www.ansible.com/"
+            },
+            {
+                "title": "New Relic",
+                "icon": "newrelic.svg",
+                "url": "https://prometheus.io/"
+            },
+            {
+                "title": "Grafana",
+                "icon": "grafana.svg",
+                "url": "https://grafana.com/"
+            }
+        ]
+    }
+]

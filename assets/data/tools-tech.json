@@ -183,8 +183,8 @@
                 "url": "https://www.ray.io/"
             },
             {
-                "title": "Google DataFlow",
-                "icon": "assets/img/tech/etl/dataflow.png",
+                "title": "Google Data Flow",
+                "icon": "assets/img/tech/etl/google-data-flow.png",
                 "url": "https://cloud.google.com/dataflow"
             },
             {
@@ -264,52 +264,52 @@
         "items": [
             {
                 "title": "Amazon Bedrock",
-                "icon": "bedrock.svg",
+                "icon": "assets/img/tech/ai/bedrock.png",
                 "url": "https://aws.amazon.com/bedrock/"
             },
             {
                 "title": "Azure AI Services",
-                "icon": "azure-ai.svg",
+                "icon": "assets/img/tech/ai/azure-ai.png",
                 "url": "https://azure.microsoft.com/en-us/products/machine-learning/"
             },
             {
                 "title": "Vertex AI",
-                "icon": "vertex-ai.svg",
+                "icon": "assets/img/tech/ai/vertex.png",
                 "url": "https://cloud.google.com/vertex-ai"
             },
             {
                 "title": "ChatGPT",
-                "icon": "chatgpt.svg",
+                "icon": "assets/img/tech/ai/chatgpt.png",
                 "url": "https://openai.com/chatgpt"
             },
             {
                 "title": "Amazon SageMaker",
-                "icon": "sagemaker.svg",
+                "icon": "assets/img/tech/ai/sagemaker.png",
                 "url": "https://aws.amazon.com/sagemaker/"
             },
             {
                 "title": "Predictive Analytics",
-                "icon": "predictive-analytics.svg",
+                "icon": "assets/img/tech/ai/predictive-analytics.png",
                 "url": "https://en.wikipedia.org/wiki/Predictive_analytics"
             },
             {
                 "title": "Natural Language Processing",
-                "icon": "nlp.svg",
+                "icon": "assets/img/tech/ai/nlp.png",
                 "url": "https://en.wikipedia.org/wiki/Natural_language_processing"
             },
             {
                 "title": "TensorFlow",
-                "icon": "tensorflow.svg",
+                "icon": "assets/img/tech/ai/tensorflow.png",
                 "url": "https://www.tensorflow.org/"
             },
             {
                 "title": "MLOps",
-                "icon": "mlops.svg",
+                "icon": "assets/img/tech/ai/mlops.png",
                 "url": "https://ml-ops.org/"
             },
             {
                 "title": "XGBoost",
-                "icon": "xgboost.svg",
+                "icon": "assets/img/tech/ai/xgboost.png",
                 "url": "https://xgboost.readthedocs.io/"
             }
         ]

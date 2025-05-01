@@ -1,12 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
-  getNavigationServices()
-  getServices();
-  getToolsAndTech();
-  getCertificates()
-  getStats()
-  getCaseStudies();
-  getFAQ()
-});
+
 
 // Function to fetch and display tools and technologies with categories
 function getToolsAndTech() {
@@ -112,6 +104,40 @@ function getServices() {
     })
     .catch((error) => console.error("Error loading services:", error));
 }
+
+// Function to fetch and display services also including top menu of services with categories
+function getJobs() {
+  const container = document.getElementById("jobs-container");
+  // Fetch services data from JSON
+  fetchData("assets/data/jobs.json")
+    .then((jobs) => {
+      if(jobs.length === 0) {
+        container.innerHTML = `<div class="col-12"><h3 class="category-title">No Jobs Available</h3></div>`;
+        return;
+      }
+      jobs.forEach((job, index) => {
+        const slug = convertToSlug(job.title);
+        const delay = (index + 1) * 100; // Incremental delay for animations
+        const serviceHTML = `
+        <div id="${slug}" class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="${delay}">
+          <div class="service-item position-relative">
+          <h4>
+              <span class="job-icon bi bi-briefcase"></span>
+              <a target="_blank" href="${job.apply_link}" class="stretched-link">${job.title}</a>
+          </h4>
+            <p>${job.description}</p>
+             <div class="d-flex mt-2">
+              <a target="_blank" href="${job.apply_link}" class="btn-apply">Apply</a>
+            </div>
+          </div>
+        </div>
+      `;
+      container.innerHTML += serviceHTML;
+      });
+    })
+    .catch((error) => console.error("Error loading services:", error));
+}
+
 
 function getStats() {
   const statsContainer = document.getElementById("stats-container");

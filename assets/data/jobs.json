@@ -1,0 +1,32 @@
+[
+    {
+      "title": "Software Engineer",
+      "description": "Develop and maintain web applications using modern frameworks and technologies. Collaborate with cross-functional teams to deliver high-quality software solutions.",
+      "apply_link": "https://example.com/apply/software-engineer",
+      "location": "San Francisco, CA"
+    },
+    {
+      "title": "Data Scientist",
+      "description": "Analyze large datasets to extract actionable insights. Build predictive models and collaborate with engineering teams to integrate machine learning solutions.",
+      "apply_link": "https://example.com/apply/data-scientist",
+      "location": "New York, NY"
+    },
+    {
+      "title": "DevOps Engineer",
+      "description": "Design and implement CI/CD pipelines. Manage cloud infrastructure and ensure system reliability and scalability.",
+      "apply_link": "https://example.com/apply/devops-engineer",
+      "location": "Remote"
+    },
+    {
+      "title": "UI/UX Designer",
+      "description": "Create intuitive and visually appealing user interfaces. Conduct user research and design wireframes and prototypes.",
+      "apply_link": "https://example.com/apply/ui-ux-designer",
+      "location": "Austin, TX"
+    },
+    {
+      "title": "Product Manager",
+      "description": "Define product vision and strategy. Work closely with engineering, design, and marketing teams to deliver successful products.",
+      "apply_link": "https://example.com/apply/product-manager",
+      "location": "Seattle, WA"
+    }
+  ]

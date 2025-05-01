@@ -25,7 +25,7 @@ function getToolsAndTech() {
           const itemSlug = convertToSlug(item.title);
           let itemHtml = `<div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
           <div class="features-item">
-            <img src="${item.icon}" style="height: 32px;width: 42px;padding: 4px;"class="img-fluid" alt="${item.title}">
+            <img loading="lazy" src="${item.icon}" style="height: 32px;width: 42px;padding: 4px;"class="img-fluid" alt="${item.title}">
             <h3><a href="#${itemSlug}" class="stretched-link">${item.title}</a></h3>
           </div>
         </div> `;
@@ -192,7 +192,7 @@ function getCaseStudies() {
            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="img">
-                <img src="${caseStudy.image}" class="img-fluid" alt="${caseStudy.title}">
+                <img loading="lazy" src="${caseStudy.image}" class="img-fluid" alt="${caseStudy.title}">
               </div>
               <div class="details">
                 <a href="${caseStudy.link}" class="stretched-link">
@@ -216,7 +216,7 @@ function getCertificates() {
       certificates.forEach((certificate, index) => {
         let certificateHTML =  `<div class="col-lg-2 col-md-3 portfolio-item isotope-item filter-app">
               <div class="portfolio-content text-center">
-                <img src="${certificate.icon}" class="img-fluid" alt="${certificate.title}">
+                <img loading="lazy" src="${certificate.icon}" class="img-fluid" alt="${certificate.title}">
                 <div class="portfolio-info">
                   <h4>${certificate.title}</h4>
                   <p>${certificate.title}</p>

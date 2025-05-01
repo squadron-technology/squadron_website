@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Squadron Technology</title>
+  <meta name="description" content="Squadron Technology">
+  <meta name="keywords" content="Squadron Technology">
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Custom JS for Services Section -->
+  <script src="assets/js/app.js"></script>
+  <style>
+    .case-details h3 {
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    .case-details .services-img {
+      margin-bottom: 20px;
+      max-height: 500px;
+      width: 100%;
+    }
+
+    .case-details h4 {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body class="service-details-page">
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.png" alt="">
+        <!-- <h1 class="sitename">Vesperr</h1> -->
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/" class="active">Home<br></a></li>
+          <li class="dropdown">
+            <a href="index.html#services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul id="services-list">
+            </ul>
+          </li>
+          <li><a href="index.html#case-studies">Case Studies</a></li>
+          <li><a target="_blank" href="/jobs">Job Openings</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <!-- <li><a href="#contact">Contact Us</a></li> -->
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <a class="btn-getstarted" href="index.html#contact">Contact Us</a>
+    </div>
+  </header>
+
+
+  <main class="main">
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Pharmacy Saving</li>
+          </ol>
+        </nav>
+        <h1>PharmaSaver: Your Ticket to Affordable Prescriptions</h1>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="case-details section">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-2" data-aos="fade-up" data-aos-delay="200"></div>
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/case-studies/PharmacySaving.webp" alt="" class="img-fluid services-img">
+            <h3>Client Success Story: Pharmacy Saving Advisor Uncovering Lowest Medication Costs</h3>
+            <h4>Introduction:</h4>
+            <p>
+              In the healthcare industry's data-centric landscape, accessing precise and real-time pricing details for
+              prescription medications is pivotal. In this blog, we explore an intricate yet ingenious solution designed
+              to surmount the obstacles presented by websites such as costplusdrugs.com and goodrx.com. Our approach
+              empowers Health Saver Pharmacy to furnish customers with the most budget-friendly choices for their
+              prescription medicines.
+            </p>
+            <h4>Challenges:</h4>
+            <p>
+            <ol>
+              <li><strong>Website Structure:</strong> The target websites (<a
+                  href="https://costplusdrugs.com">costplusdrugs.com</a> and <a
+                  href="https://goodrx.com">goodrx.com</a>) have varying structures, including dynamic elements loaded
+                through JavaScript. This makes it challenging to locate and extract the required data using traditional
+                scraping techniques.</li><br>
+              <li><strong>Anti-Scraping Mechanisms:</strong> Websites often implement anti-scraping mechanisms to deter
+                automated data collection. These mechanisms include CAPTCHAs, rate limiting, and dynamic element IDs,
+                posing challenges to consistent and reliable scraping.</li><br>
+              <li><strong>Data Accuracy:</strong> Ensuring the accuracy of scraped data is crucial. Prices may be
+                displayed in different formats, and extracting the correct pricing information while accounting for
+                variations becomes a challenge.</li>
+            </ol>
+            </p>
+            <h4>Solution:</h4>
+            <p>
+            <p>The solution to the challenge encompasses several essential components: </p>
+            <p class="text-center">
+              <img src="assets/img/case-studies/PharmacySaving.html.png" alt="Client Success Image" /> <br />
+              <b> Architecture diagram for the Pharmacy Saving project</b>
+            </p>
+            <ul>
+              <li><strong>Selenium WebDriver:</strong> To handle the dynamic aspects of the websites, we utilized the
+                Selenium WebDriver with Python. This allowed us to interact with the websites just like a human user,
+                enabling us to bypass some anti-scraping measures and extract data from JavaScript-rendered content.
+              </li><br>
+              <li><strong>CAPTCHA Handling:</strong> In case of encountering CAPTCHAs, we implemented a manual
+                intervention mechanism. When the scraper encountered a CAPTCHA, it paused and prompted an operator to
+                solve it before resuming scraping.</li><br>
+              <li><strong>Properties used for scraping:</strong> We used CLASS_NAME, XPATH, TAG_NAME, and CSS selectors
+                to locate and extract specific elements from the web pages. These techniques provided flexibility in
+                adapting to changes in the website's structure.</li><br>
+              <li><strong>Data Parsing and Normalization:</strong> Extracted data, especially prices, underwent thorough
+                parsing and normalization to ensure consistency in formats. Regular expressions and string manipulation
+                were employed for this purpose.</li>
+            </ul>
+            </p>
+            <h4>Workflow:</h4>
+            <p>
+            <ol>
+              <li><strong>Website Navigation:</strong> The scraper uses the Selenium WebDriver to navigate to the target
+                websites' pages for various drugs.</li><br>
+              <li><strong>Data Extraction:</strong> CLASS_NAME, XPATH, TAG_NAME, and CSS selectors are employed to
+                locate drug names, dosages, and prices on the pages. The scraper interacts with dynamic elements to load
+                necessary content.</li><br>
+              <li><strong>Data Processing:</strong> Extracted data is parsed and normalized. Price formats are
+                standardized for accurate comparison.</li><br>
+              <li><strong>Comparison:</strong> Scraped prices from both websites for the same drug are compared to find
+                the lowest price.</li><br>
+              <li><strong>Output:</strong> The lowest price for each drug is stored in a structured format (e.g., CSV,
+                JSON) for easy reference and analysis.</li>
+            </ol>
+            </p>
+            <h4>Conclusion:</h4>
+            <p>Through diligent web scraping using Selenium, we successfully tackled the challenges posed by <a
+                href="https://costplusdrugs.com">costplusdrugs.com</a> and <a href="https://goodrx.com">goodrx.com</a>
+              to find the lowest prices for various drugs. By combining automation, human intervention for CAPTCHAs, and
+              data normalization techniques, we ensured accurate and consistent results. This web scraping project
+              equips Health Saver Pharmacy to provide its customers with up-to-date information on the most
+              cost-effective options for their prescription medications.</p>
+            <!-- <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
+            </ul> -->
+
+          </div>
+        </div>
+      </div>
+    </section><!-- /Service Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">squadrontechnology</strong> <span>All Rights
+            Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <!-- <div class="credits"> -->
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you've purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+      <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      <!-- </div> -->
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

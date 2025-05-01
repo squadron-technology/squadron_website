@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Squadron Technology</title>
+  <meta name="description" content="Squadron Technology">
+  <meta name="keywords" content="Squadron Technology">
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Custom JS for Services Section -->
+  <script src="assets/js/app.js"></script>
+  <style>
+    .case-details h3 {
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    .case-details .services-img {
+      margin-bottom: 20px;
+      max-height: 500px;
+      width: 100%;
+    }
+
+    .case-details h4 {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body class="service-details-page">
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.png" alt="">
+        <!-- <h1 class="sitename">Vesperr</h1> -->
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/" class="active">Home<br></a></li>
+          <li class="dropdown">
+            <a href="index.html#services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul id="services-list">
+            </ul>
+          </li>
+          <li><a href="index.html#case-studies">Case Studies</a></li>
+          <li><a target="_blank" href="/jobs">Job Openings</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <!-- <li><a href="#contact">Contact Us</a></li> -->
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <a class="btn-getstarted" href="index.html#contact">Contact Us</a>
+    </div>
+  </header>
+
+
+  <main class="main">
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Scrapper</li>
+          </ol>
+        </nav>
+        <h1>Data Dynamo: Scraper Optimization & Containerization Marvel</h1>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="case-details section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-2" data-aos="fade-up" data-aos-delay="200"></div>
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/case-studies/scrapper-main.jpg" alt="" class="img-fluid services-img">
+            <div >
+              <h2>Introduction:
+              </h2>
+              <p>In this comprehensive blog post, we delve into the intricacies of "Elevating Efficiency: Scraper
+                  Optimization and Containerization Solutions." This insightful exploration navigates through the
+                  challenges encountered, the ingenious solutions devised, and the transformative impact of optimizing a
+                  web scraper for enhanced efficiency. From outdated data retrieval to inconsistent performance, extended
+                  processing times, and the absence of cloud deployment, we dissect the hurdles faced and the innovative
+                  steps taken to overcome them. Discover how modularization, AWS integration, automated pipelines,
+                  PostgreSQL, and cloud deployment converged to elevate scraper efficiency. Join us on this transformative
+                  journey towards streamlining web scraping processes for superior performance and productivity.</p>
+              <h2>Challenges Faced:</h2>
+              <ul style="list-style-type:disc;">
+                  <li><strong>Outdated Data Retrieval:</strong> Our existing scraper, built with the Scrapy module in
+                      Python, faced difficulties in keeping data current in Elasticsearch.</li>
+                  <li><strong>Inconsistent Performance:</strong> The scraper's functionality was compromised, resulting in
+                      inadequate data extraction and processing.</li>
+                  <li><strong>Extended Processing Time:</strong> Data collection for a single customer spanned an entire
+                      day, hampering efficiency and productivity.</li>
+                  <li><strong>Lack of Cloud Deployment:</strong> The scraper was limited by its local deployment, missing
+                      out on the benefits of cloud scalability and accessibility.</li>
+                  <li><strong>Manual Workflow:</strong> The absence of an automated pipeline added complexity to data
+                      acquisition, hindering smooth operations.</li>
+              </ul>
+  
+              <h2>Solution:</h2>
+              <img src="assets/img/case-studies/scrapper.jpg" alt="Client Success Image"><small><B>
+                      <center>Architecture diagram for Scraper Optimization And Containerization Solutions</center>
+                  </B></small><br>
+              <ul style="list-style-type:disc;">
+                  <li><strong>Code Modularization:</strong> Dissected existing code into distinct components for enhanced
+                      clarity and efficiency.</li>
+                  <li><strong>Scrapy with Subprocess:</strong> Utilized a subprocess approach to revitalize the Scrapy
+                      spider, boosting performance significantly.</li>
+                  <li><strong>AWS SQS Integration:</strong> Implemented AWS SQS to intelligently manage URLs earmarked for
+                      scraping.</li>
+                  <li><strong>Automated Pipeline:</strong> Employed GitHub Actions and Terraform to construct a seamless,
+                      automated workflow, minimizing manual intervention.</li>
+                  <li><strong>PostgreSQL Database:</strong> Leveraged PostgreSQL to not only store spider data but also
+                      ensure data verification accuracy.</li>
+                  <li><strong>AWS ECS Deployment:</strong> Took advantage of AWS ECS to deploy the code, embracing the
+                      cloud's capabilities.</li>
+                  <li><strong>Autoscaling Excellence:</strong> Configured dynamic autoscaling policies for ECS tasks,
+                      ensuring optimal performance and resource allocation.</li>
+              </ul>
+  
+              <h2>Conclusion:</h2>
+              <p>In the end, we took apart the old way of doing things and put it back together smarter. We made the
+                  Scrapy spider work better using a special method. We also made sure the URLs to be scraped were managed
+                  well with AWS SQS. Our cool combo of GitHub Actions and Terraform made everything run by itself, saving
+                  time and effort. Plus, we used PostgreSQL to keep data safe and accurate. We didn't stop there. By using
+                  AWS ECS, we put our code in the cloud, which is like having superpowers. And we set up smart rules so
+                  things always ran just right. So, in a nutshell, we made everything work better and faster. It's been
+                  quite a journey, and this new way of doing things opens doors for even more improvements down the road.
+              </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Service Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">squadrontechnology</strong> <span>All Rights
+            Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <!-- <div class="credits"> -->
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you've purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+      <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      <!-- </div> -->
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

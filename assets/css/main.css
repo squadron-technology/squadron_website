@@ -649,6 +649,31 @@ h6 {
   border: 2px solid var(--contrast-color);
 }
 
+
+/*--------------------------------------------------------------
+# case Sections
+--------------------------------------------------------------*/
+.case-details h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.case-details h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.case-details img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 2px solid #000;
+}
+.case-details p, li {
+  color: #666;
+}
+
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/

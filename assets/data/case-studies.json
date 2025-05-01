@@ -9,24 +9,24 @@
     "title": "Unlocking HIPAA: Protecting Healthcare Data",
     "description": "Discover the Ultimate Pharmacy Cost-Saving Guide: Uncovering Hidden Opportunities to Make Medications More Affordable",
     "image": "assets/img/case-studies/hippa.webp",
-    "link": "PharmacySaving.html"
+    "link": "HIPPA.html"
   },
   {
     "title": "Ecom360: Navigating E-Commerce with Precision",
     "description": "Discover the Ultimate Pharmacy Cost-Saving Guide: Uncovering Hidden Opportunities to Make Medications More Affordable",
     "image": "assets/img/case-studies/ecommerce.png",
-    "link": "PharmacySaving.html"
+    "link": "ecommerce.html"
   },
   {
     "title": "Data Dynamo: Scraper Optimization & Containerization Marvel",
     "description": "Discover the Ultimate Pharmacy Cost-Saving Guide: Uncovering Hidden Opportunities to Make Medications More Affordable",
     "image": "assets/img/case-studies/scrapper-main.jpg",
-    "link": "PharmacySaving.html"
+    "link": "scrapper.html"
   },
   {
     "title": "AI and Big Data Unleashed: Igniting Your Path to Success",
     "description": "Discover the Ultimate Pharmacy Cost-Saving Guide: Uncovering Hidden Opportunities to Make Medications More Affordable",
     "image": "assets/img/case-studies/kudals-ai.jpg",
-    "link": "PharmacySaving.html"
+    "link": "Kudala.html"
   }
 ]

@@ -23,7 +23,7 @@ function getToolsAndTech() {
         // Render services within the category
         tool.items.forEach((item, index) => {
           const itemSlug = convertToSlug(item.title);
-          let itemHtml = `<div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+          let itemHtml = `<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
           <div class="features-item">
             <img loading="lazy" src="${item.icon}" style="height: 32px;width: 42px;padding: 4px;"class="img-fluid" alt="${item.title}">
             <h3><a href="#${itemSlug}" class="stretched-link">${item.title}</a></h3>
@@ -92,7 +92,7 @@ function getServices() {
             <div class="service-item position-relative">
             <h4>
                 <span class="service-icon">${service.icon}</span>
-                <a href="" class="stretched-link">${service.title}</a>
+                <a href="#" class="stretched-link">${service.title}</a>
             </h4>
               <p>${service.description}</p>
             </div>
@@ -146,7 +146,7 @@ function getStats() {
    .then((stats) => {
     stats.forEach((stat, index) => {
       statsContainer.innerHTML += `
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-sm-6 col-md-6">
             <div class="stats-item d-flex">
               <i class="${stat.icon} flex-shrink-0"></i>
               <div>

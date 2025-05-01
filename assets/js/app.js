@@ -25,7 +25,7 @@ function getToolsAndTech() {
           const itemSlug = convertToSlug(item.title);
           let itemHtml = `<div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
           <div class="features-item">
-            <img src="${item.icon}" style="height: 32px;width: 42px;"class="img-fluid" alt="${item.title}">
+            <img src="${item.icon}" style="height: 32px;width: 42px;padding: 4px;"class="img-fluid" alt="${item.title}">
             <h3><a href="#${itemSlug}" class="stretched-link">${item.title}</a></h3>
           </div>
         </div> `;

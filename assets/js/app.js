@@ -50,7 +50,7 @@ function getNavigationServices() {
         let categoryMenuHTML = `
         <li class="dropdown">
             <a href="#${categorySlug}"><span>${category.category}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
+            <ul class="submenu">
         `;
         // Render services within the category
         category.services.forEach((service) => {

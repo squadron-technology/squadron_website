@@ -649,6 +649,17 @@ h6 {
   border: 2px solid var(--contrast-color);
 }
 
+.submenu {
+  position: absolute;
+  top: 0;
+  right: 102%; /* Puts submenu to the left of parent */
+  display: none;
+  background-color: white;
+  list-style: none;
+  border: 1px solid #ccc;
+  padding: 0;
+  margin: 0;
+}
 
 /*--------------------------------------------------------------
 # case Sections

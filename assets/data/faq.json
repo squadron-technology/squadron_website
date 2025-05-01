@@ -1,0 +1,30 @@
+[
+    {
+      "question": "What industries does Squadron Technology serve?",
+      "answer": "We provide our technology solutions to clients across various sectors including: <ul><li>Healthcare</li><li>Finance</li><li>Transportation and Navigation</li><li>Infotainment</li></ul>"
+    },
+    {
+      "question": "What services can SQUADRON provide?",
+      "answer": "<ul><li>Custom software development</li><li>Cloud solutions</li><li>Mobile app development</li><li>Web application development</li><li>IT consulting services</li><li>System integration</li></ul>"
+    },
+    {
+      "question": "What is Squadron Technology?",
+      "answer": "A technology solutions provider specializing in custom software development and digital transformation."
+    },
+    {
+      "question": "Do you offer customized solutions?",
+      "answer": "Yes. We tailor our solutions to address your specific business challenges and objectives."
+    },
+    {
+      "question": "How do I reach out or start an engagement with SQUADRON?",
+      "answer": "<ol><li>Contact us via our website form, email at hr@squadrontechnology.com, or call 9714447448.</li><li>Schedule an initial consultation.</li><li>Receive our proposal with timeline and pricing.</li><li>Begin the engagement upon approval.</li></ol>"
+    },
+    {
+      "question": "What are SQUADRON's working hours?",
+      "answer": "Our working hours are dynamic and flexible to accommodate client needs across different time zones and ensure optimal collaboration."
+    },
+    {
+      "question": "What is the delivery approach of SQUADRON?",
+      "answer": "We follow an agile methodology with:<ul><li>Requirements analysis</li><li>Sprint-based development</li><li>Regular client updates</li><li>Quality testing</li><li>Deployment</li><li>Post-launch support</li></ul>"
+    }
+]

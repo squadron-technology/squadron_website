@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   getCertificates()
   getStats()
   getCaseStudies();
+  getFAQ()
 });
 
 // Function to fetch and display tools and technologies with categories
@@ -95,7 +96,7 @@ function getServices() {
           // categoryMenuHTML += `<li><a href="#${serviceSlug}">${service.title}</a></li>`;
           const delay = (index + 1) * 100; // Incremental delay for animations
           const serviceHTML = `
-          <div id="${serviceSlug}" class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="${delay}">
+          <div id="${serviceSlug}" class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="${delay}">
             <div class="service-item position-relative">
             <h4>
                 <span class="service-icon">${service.icon}</span>
@@ -131,6 +132,28 @@ function getStats() {
     `
      })
     }).catch((error) => console.error("Error loading Stats:", error));
+}
+
+function getFAQ() {
+  const container = document.getElementById("faq-container");
+   // Fetch certificates data from JSON
+   fetchData("assets/data/faq.json")
+   .then((faqs) => {
+    faqs.forEach((faq, index) => {
+      container.innerHTML += `
+        <div class="row faq-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5 d-flex">
+            <i class="bi bi-question-circle"></i>
+            <h4>${faq.question}</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+            ${faq.answer}
+          </div>
+        </div>
+    `
+     })
+    }).catch((error) => console.error("Error loading FAQ:", error));
 }
 
 function getCaseStudies() {

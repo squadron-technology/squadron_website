@@ -1,66 +1,74 @@
 [
   {
     "title": "AWS Certified Solutions Architect - Associate",
-    "icon": "aws-certified-solutions-architect-associate.png"
-  },
-  {
-    "title": "AWS Certified Developer - Associate",
-    "icon": "aws-certified-developer-associate.png"
-  },
-  {
-    "title": "AWS Certified SysOps Administrator - Associate",
-    "icon": "aws-certified-sysops-administrator-associate.png"
+    "icon": "assets/img/certificates/aws-certified-solutions-architect-associate.png"
   },
   {
     "title": "AWS Certified Solutions Architect - Professional",
-    "icon": "aws-certified-solutions-architect-professional.png"
+    "icon": "assets/img/certificates/aws-certified-solutions-architect-professional.png"
+  },
+  {
+    "title": "Microsoft Certified Azure Solution Architec Expert",
+    "icon": "assets/img/certificates/microsoft-certified-azure-solution-architect-expert.png"
+  },
+  {
+    "title": "Microsoft Certified Azure Data Fundamentals",
+    "icon": "assets/img/certificates/microsoft-certified-azure-data-fundamentals.png"
+  },
+  {
+    "title": "Google Cloud Certified - Data Engineer Professional",
+    "icon": "assets/img/certificates/google-cloud-certified-data-engineer-professional.png"
+  },
+  {
+    "title": "Google Cloud Certified - Cloud Architect",
+    "icon": "assets/img/certificates/google-cloud-certified-cloud-architect.png"
   },
   {
     "title": "AWS Certified DevOps Engineer - Professional",
-    "icon": "aws-certified-devops-engineer-professional.png"
-  },
-  {
-    "title": "AWS Certified Cloud Practitioner",
-    "icon": "aws-certified-cloud-practitioner.png"
-  },
-  {
-    "title": "AWS Certified Advanced Networking - Specialty",
-    "icon": "aws-certified-advanced-networking-specialty.png"
-  },
-  {
-    "title": "AWS Certified Security - Specialty",
-    "icon": "aws-certified-security-specialty.png"
+    "icon": "assets/img/certificates/aws-certified-devops-engineer-professional.png"
   },
   {
     "title": "AWS Certified Machine Learning - Specialty",
-    "icon": "aws-certified-machine-learning-specialty.png"
+    "icon": "assets/img/certificates/aws-certified-machine-learning-specialty.png"
   },
   {
-    "title": "AWS Certified Database - Specialty",
-    "icon": "aws-certified-database-specialty.png"
+    "title": "Microsoft Certified Azure Fundamentals",
+    "icon": "assets/img/certificates/microsoft-certified-azure-fundamentals.png"
   },
   {
-    "title": "AWS Certified Data Analytics - Specialty",
-    "icon": "aws-certified-data-analytics-specialty.png"
+    "title": "Microsoft Certified Azure Power BI Data Analyst",
+    "icon": "assets/img/certificates/microsoft-certified-azure-power-bi-data-analyst.png"
   },
   {
-    "title": "AWS Certified SAP on AWS - Specialty",
-    "icon": "aws-certified-sap-on-aws-specialty.png"
+    "title": "Datadog Certified",
+    "icon": "assets/img/certificates/datadog-certified.png"
   },
   {
-    "title": "AWS Certified Alexa Skill Builder - Specialty",
-    "icon": "aws-certified-alexa-skill-builder-specialty.png"
+    "title": "Confluent Certified Developer for Apache Kafka",
+    "icon": "assets/img/certificates/confluent-certified-developer-for-apache-kafka.png"
   },
   {
-    "title": "AWS Certified Machine Learning - Specialty",
-    "icon": "aws-certified-machine-learning-specialty.png"
+    "title": "Certified Kubernetes Administrator",
+    "icon": "assets/img/certificates/certified-kubernetes-administrator.png"
   },
   {
-    "title": "AWS Certified Database - Specialty",
-    "icon": "aws-certified-database-specialty.png"
+    "title": "MongoDB Certified Developer Associate",
+    "icon": "assets/img/certificates/mongodb-certified-developer-associate.png"
   },
   {
-    "title": "AWS Certified Data Analytics - Specialty",
-    "icon": "aws-certified-data-analytics-specialty.png"
+    "title": "Databricks Certified Data Engineer Associate",
+    "icon": "assets/img/certificates/databricks-certified-data-engineer-associate.png"
+  },
+  {
+    "title": "Databricks Lakehouse Data Engineer Professional",
+    "icon": "assets/img/certificates/databricks-lakehouse-data-engineer-professional.png"
+  },
+  {
+    "title": "Certified Tableau Desktop Specialist",
+    "icon": "assets/img/certificates/certified-tableau-desktop-specialist.png"
+  },
+  {
+    "title": "Snowflake SnowPro Core Certification",
+    "icon": "assets/img/certificates/snowflake-snowpro-core-certification.png"
   }
 ]

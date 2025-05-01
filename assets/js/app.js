@@ -188,9 +188,9 @@ function getCertificates() {
   fetchData("assets/data/certifications.json")
     .then((certificates) => {
       certificates.forEach((certificate, index) => {
-        let certificateHTML =  `<div class="col-lg-3 col-md-4 portfolio-item isotope-item filter-app">
+        let certificateHTML =  `<div class="col-lg-2 col-md-3 portfolio-item isotope-item filter-app">
               <div class="portfolio-content text-center">
-                <img src="assets/img/certifications/${index+77}.png" class="img-fluid" alt="${certificate.title}">
+                <img src="${certificate.icon}" class="img-fluid" alt="${certificate.title}">
                 <div class="portfolio-info">
                   <h4>${certificate.title}</h4>
                   <p>${certificate.title}</p>

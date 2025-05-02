@@ -175,23 +175,23 @@ function getStats() {
 }
 
 function getFAQ() {
-  const container = document.getElementById("faq-container");
+  const container = document.getElementById("faq-container-");
   // Fetch certificates data from JSON
   fetchData("assets/data/faq.json")
     .then((faqs) => {
       faqs.forEach((faq, index) => {
-        container.innerHTML += `
-        <div class="row faq-item" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-5 d-flex">
-            <i class="bi bi-question-circle"></i>
-            <h4>${faq.question}</h4>
-          </div>
-          <div class="col-lg-7">
-            <p>
-            ${faq.answer}
-          </div>
-        </div>
-    `;
+        container.innerHTML += `<div class="accordion-item mb-3">
+    <h2 class="accordion-header" id="heading-${index}">
+      <button style="font-weight: 500;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${index}" aria-expanded="false" aria-controls="collapse-${index}">
+      ${faq.question}
+      </button>
+    </h2>
+    <div id="collapse-${index}" class="accordion-collapse collapse" aria-labelledby="heading-${index}" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      ${faq.answer}
+      </div>
+    </div>
+  </div>`;
       });
     })
     .catch((error) => console.error("Error loading FAQ:", error));

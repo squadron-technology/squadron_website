@@ -123,7 +123,7 @@ function getJobs() {
   fetchData("assets/data/jobs.json")
     .then((jobs) => {
       if (jobs.length === 0) {
-        container.innerHTML = `<div class="col-12"><h3 class="category-title">No Jobs Available</h3></div>`;
+        container.innerHTML = `<div class="col-12"><h3 class="category-title">No Open Jobs Available</h3></div>`;
         return;
       }
       jobs.forEach((job, index) => {

@@ -31,6 +31,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <!-- <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> -->
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendor/glider/css/glider.min.css">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -185,13 +186,19 @@
       </div><!-- End Section Title -->
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="gy-4">
-          <div class="marquee-wrapper overflow-hidden">
+          <!-- <div class="marquee-wrapper overflow-hidden">
             <div class="marquee-content d-flex" id="case-studies-container">
             </div>
+          </div> -->
+          <div class="glider-contain">
+            <div class="glider" id="case-studies-container">
+            
+            </div>
+            <button role="button" aria-label="Previous" class="glider-prev">«</button>
+            <button role="button" aria-label="Next" class="glider-next">»</button>
           </div>
         </div>
       </div>
-
     </section><!-- /Alt Services Section -->
 
 
@@ -371,6 +378,8 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <!-- Custom JS for Services Section -->
    <script src="assets/js/app.js"></script>
+  <script src="assets/vendor/glider/js/glider.min.js"></script>
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       getNavigationServices()
@@ -384,5 +393,6 @@
   </script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
 </body>
 </html>

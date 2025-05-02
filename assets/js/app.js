@@ -30,7 +30,6 @@ function getToolsAndTech() {
           toolsContainer.innerHTML += itemHtml;
         });
       });
-     
     })
     .catch((error) => console.error("Error loading:", error));
 }
@@ -206,7 +205,6 @@ function getCaseStudies() {
     .then((caseStudies) => {
       caseStudies.forEach((caseStudy, index) => {
         let caseStudyHTML = `
-           <div class="marquee-item" >
             <div class="service-item position-relative">
               <div class="img">
                 <img loading="lazy" src="${caseStudy.image}" class="img-fluid" alt="${caseStudy.title}">
@@ -217,12 +215,72 @@ function getCaseStudies() {
                 </a>
                 <p>${caseStudy.description}</p>
               </div>
-            </div>
           </div>`;
         caseStudiesContainer.innerHTML += caseStudyHTML;
       });
+      initGlider();
     })
     .catch((error) => console.error("Error loading case studies:", error));
+}
+
+function initGlider() {
+  const glider = new Glider(document.querySelector(".glider"), {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    scrollLock: true,
+    draggable: true,
+    dots: "#dots",
+    duration: 1,
+    arrows: {
+      prev: ".glider-prev",
+      next: ".glider-next",
+    },
+    responsive: [
+      {
+        // screens greater than >= 775px
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          duration: 1.5,
+        },
+      },
+      {
+        // screens greater than >= 775px
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          duration: 1.5,
+        },
+      },
+    ],
+  });
+
+  // Autoplay that loops back to the start
+  let autoplayInterval = setInterval(() => {
+    const totalSlides = glider.slides.length;
+    // console.log("totalSlides", totalSlides, glider?.opt?.slidesToShow, glider?.slide)
+    const currentSlide = glider?.slide;
+    if (currentSlide + glider?.opt?.slidesToShow >= totalSlides) {
+      glider.scrollItem(0); // Go back to the first item
+    } else {
+      glider.scrollItem(currentSlide + 1); // Scroll to next
+    }
+  }, 2000); // change interval as needed (in ms)
+
+  // Autoplay function
+  const gliderEl = document.querySelector(".glider");
+  gliderEl.addEventListener("mouseover", () => clearInterval(autoplayInterval));
+  gliderEl.addEventListener("mouseout", () => {
+    autoplayInterval = setInterval(() => {
+      if (glider.slide + 1 < glider.slides.length) {
+        glider.scrollItem(glider.slide + 1);
+      } else {
+        glider.scrollItem(0);
+      }
+    }, 3000);
+  });
 }
 
 function getCertificates() {

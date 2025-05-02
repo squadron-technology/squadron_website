@@ -1029,7 +1029,7 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
-  background-color: var(--surface-color);
+  /* background-color: var(--surface-color); */
   box-shadow: 0px 0 30px 0 rgba(0, 0, 0, 0.1);
   padding: 30px 30px;
   transition: all ease-in-out 0.4s;
@@ -1037,6 +1037,14 @@ section,
   overflow: hidden;
   z-index: 1;
 }
+
+.service-item {
+  box-sizing: border-box;
+  background: #f5f5f5;
+  margin-right: 10px;
+  padding: 1rem;
+}
+
 
 .services .service-item:before {
   content: "";

@@ -159,7 +159,7 @@
         },
         {
           "title": "BigQuery",
-          "icon": "assets/img/tech/etl/bigquery.png",
+          "icon": "assets/img/tech/svg/BigQuery.svg",
           "url": "https://cloud.google.com/bigquery"
         },
         {
@@ -184,7 +184,7 @@
         },
         {
           "title": "Google Data Flow",
-          "icon": "assets/img/tech/etl/google-data-flow.png",
+          "icon": "assets/img/tech/svg/Dataflow.svg",
           "url": "https://cloud.google.com/dataflow"
         },
         {

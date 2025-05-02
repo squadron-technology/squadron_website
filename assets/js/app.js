@@ -238,7 +238,6 @@ function getCertificates() {
                 <img loading="lazy" src="${certificate.icon}" class="img-fluid" alt="${certificate.title}">
                 <div class="portfolio-info">
                   <h4>${certificate.title}</h4>
-                  <p>${certificate.title}</p>
                 </div>
               </div>
             </div>`;

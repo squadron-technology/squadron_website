@@ -49,19 +49,29 @@ function getNavigationServices() {
         // Create a category title
         let categoryMenuHTML = `
         <li class="dropdown">
-            <a href="#${categorySlug}"><span>${category.category}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <a href="#">
+              <span>${category.category}</span> 
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
             <ul class="submenu">
         `;
         // Render services within the category
         category.services.forEach((service) => {
           const serviceSlug = convertToSlug(service.title);
-          categoryMenuHTML += `<li><a href="#${serviceSlug}">${service.title}</a></li>`;
+          categoryMenuHTML += `<li class="">
+            <a href="#${serviceSlug}">${service.title}</a></li>`;
         });
         categoryMenuHTML += `</ul></li>`;
         servicesMenu.innerHTML += categoryMenuHTML;
       });
+      navmenulinks = document.querySelectorAll('.navmenu a');
+      // Addming these when navigation content loaded so that it can open properly
+      navmenuScrollspy()
+      hideMobileNav()
+      toggleMobileNav()
     })
     .catch((error) => console.error("Error loading services:", error));
+
 }
 
 // Function to fetch and display services also including top menu of services with categories
@@ -126,6 +136,9 @@ function getJobs() {
               <a target="_blank" href="${job.apply_link}" class="stretched-link">${job.title}</a>
           </h4>
             <p>${job.description}</p>
+             <p>
+              <strong>Location:</strong> ${job.location}
+            </p>
              <div class="d-flex mt-2">
               <a target="_blank" href="${job.apply_link}" class="btn-apply">Apply</a>
             </div>

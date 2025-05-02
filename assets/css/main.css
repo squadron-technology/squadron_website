@@ -1106,6 +1106,10 @@ section,
   color: var(--accent-color);
 }
 
+.services .service-item:hover .job-icon{
+  color: white
+}
+
 /*--------------------------------------------------------------
 # Alt Services Section
 --------------------------------------------------------------*/

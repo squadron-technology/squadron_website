@@ -181,7 +181,6 @@ function toggleMobileNav() {
 }
 
 function navmenuScrollspy() {
-  console.log("navmenulinks ", navmenulinks);
   navmenulinks?.forEach((navmenulink) => {
     if (!navmenulink.hash) return;
     try {

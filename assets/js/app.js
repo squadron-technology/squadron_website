@@ -30,6 +30,7 @@ function getToolsAndTech() {
           toolsContainer.innerHTML += itemHtml;
         });
       });
+     
     })
     .catch((error) => console.error("Error loading:", error));
 }
@@ -92,10 +93,9 @@ function getServices() {
         // Render services within the category
         category.services.forEach((service, index) => {
           const serviceSlug = convertToSlug(service.title);
-          // categoryMenuHTML += `<li><a href="#${serviceSlug}">${service.title}</a></li>`;
           const delay = (index + 1) * 100; // Incremental delay for animations
           const serviceHTML = `
-          <div id="${serviceSlug}" class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="${delay}">
+          <div id="${serviceSlug}" style="scroll-margin-top: 120px;" class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="${delay}">
             <div class="service-item position-relative">
             <h4>
                 <span class="service-icon">${service.icon}</span>
@@ -262,7 +262,12 @@ function fetchData(url) {
     });
 }
 
-// Utility function to convert a string to lowercase and replace spaces with hyphens
+// Utility function to convert a string to a slug
 function convertToSlug(text) {
-  return text.toLowerCase().replace(/\s+/g, "-");
+  return text
+    .toLowerCase() // Convert to lowercase
+    .replace(/^\d+/g, "") // Remove numbers from the beginning
+    .replace(/\//g, "") // Remove slashes
+    .replace(/\s+/g, "-") // Replace spaces with hyphens
+    .replace(/[^a-z0-9\-]/g, ""); // Remove any non-alphanumeric characters except hyphens
 }

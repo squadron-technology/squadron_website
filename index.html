@@ -39,14 +39,14 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">Who We Are</a></li>
           <li class="dropdown">
             <a href="#services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul id="services-list">
             </ul>
           </li>
           <li><a href="#case-studies">Case Studies</a></li>
-          <li><a target="_blank" href="/jobs.html">Job Openings</a></li>
-          <li><a href="#about">About Us</a></li>
+          <li><a target="_blank" href="/jobs.html">Career</a></li>
           <!-- <li><a href="#contact">Contact Us</a></li> -->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -80,27 +80,23 @@
 
     </section><!-- /Hero Section -->
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients section light-background">
-      <div class="container" data-aos="fade-up">
-      </div>
-    </section>
-    <!-- /Clients Section -->
+    <!-- Divider Section -->
+    <section id="clients" class="divider section light-background"></section>
+    <!-- Divider Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
-      <!-- Section Title -->
+      
+        <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About Us</h2>
-        <!-- <p>Story about us</p> -->
+        <h2>Who We Are</h2>
       </div><!-- End Section Title -->
 
       <div class="container">
-
         <div class="row gy-5">
-          <div class="content col-xl-2 d-flex flex-column"></div>
-          <div class="content col-xl-5 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
-            <h3>Background </h3>
+          <div class="content col-xl-1 d-flex flex-column"></div>
+          <div class="content col-xl-10 d-flex flex-column text-justify" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="category-title">Background </h3>
             <p>
               Squadron Technology is a leading consulting firm
               specializing in Cloud, AI/ML, Data, and Analytics,
@@ -113,8 +109,8 @@
               analytics.
             </p>
             <div class="icon-box position-relative">
-              <i class="bi bi-people"></i>
-              <h4><a href="" class="stretched-link">Professionals Team</a></h4>
+              <!-- <h3><a href="" class="stretched-link">Professionals Team</a></h3> -->
+              <h4 class="category-title">Professionals Team </h4>
               <p>Supported by a team of certified professionals with
                 extensive experience in both Fortune 5000
                 companies and rapidly growing startups, we blend
@@ -128,10 +124,10 @@
                 precision, performance, and purpose.</p>
             </div><!-- Icon-Box -->
 
-            <a href="#" class="about-btn mt-4 align-self-center align-self-xl-start"><span>About us</span> <i class="bi bi-chevron-right"></i></a>
+            <a href="#" class="about-btn mt-4 align-self-center align-self-xl-start"><span>Who We Are</span> <i class="bi bi-chevron-right"></i></a>
           </div>
 
-          <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+          <!-- <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
             <div class="row gy-4">
 
 
@@ -143,22 +139,9 @@
                   <i class="bi bi-geo-alt small"></i> Wiesbaden, Germany <br />
                   <i class="bi bi-geo-alt small"></i> Ahmedabad / Bangalore, India <br />
                 </p>
-              </div><!-- Icon-Box -->
-
-              <!-- <div class="col-md-6 icon-box position-relative">
-                <i class="bi bi-broadcast"></i>
-                <h4><a href="" class="stretched-link">VISIT US</a></h4>
-                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-              </div>Icon-Box -->
-
-              <!-- <div class="col-md-6 icon-box position-relative">
-                <i class="bi bi-easel"></i>
-                <h4><a href="" class="stretched-link">Beatae veritatis</a></h4>
-                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-              </div>Icon-Box -->
-
+              </div>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -166,11 +149,18 @@
 
     </section><!-- /About Section -->
 
+
+    <!-- Divider Section -->
+    <section id="clients" class="divider section light-background"></section>
+    <!-- Divider Section -->
+
     <!-- Stats Section -->
     <section id="stats" class="stats section">
-
+       <!-- Section Title -->
+       <div class="container section-title" data-aos="fade-up">
+        <h2>Why Choose Us</h2>
+      </div><!-- End Section Title -->
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4 align-items-center">
           <div class="col-lg-5">
             <img src="assets/img/stats-img.svg" loading="lazy" alt="" class="img-fluid">
@@ -183,6 +173,11 @@
         </div>
       </div>
     </section><!-- /Stats Section -->
+
+
+    <!-- Divider Section -->
+    <section id="clients" class="divider section light-background"></section>
+    <!-- Divider Section -->
 
     <!-- Services Section -->
     <section id="services" class="services section">
@@ -199,15 +194,32 @@
 
     </section><!-- /Services Section -->
 
+
+    <!-- Divider Section -->
+    <section id="clients" class="divider section light-background"></section>
+    <!-- Divider Section -->
+
     <!-- case-studies Section -->
     <section id="case-studies" class="alt-services section">
+       <!-- Section Title -->
+       <div class="container section-title" data-aos="fade-up">
+        <h2>Case Studies</h2>
+      </div><!-- End Section Title -->
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4" id="case-studies-container">
-          <!-- Case Studies -->
+        <div class=" gy-4" >
+          <div class="marquee-wrapper overflow-hidden">
+            <div class="marquee-content d-flex" id="case-studies-container">
+            </div>
+          </div>
         </div>
       </div>
 
     </section><!-- /Alt Services Section -->
+
+
+    <!-- Divider Section -->
+    <section id="clients" class="divider section light-background"></section>
+    <!-- Divider Section -->
 
     <!-- Features Section -->
     <section id="features" class="features section">
@@ -222,6 +234,11 @@
         </div>
       </div>
     </section><!-- /Features Section -->
+
+
+    <!-- Divider Section -->
+    <section id="clients" class="divider section light-background"></section>
+    <!-- Divider Section -->
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
@@ -254,6 +271,11 @@
       </div>
     </section><!-- /Faq Section -->
 
+
+    <!-- Divider Section -->
+    <section id="clients" class="divider section light-background"></section>
+    <!-- Divider Section -->
+
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
@@ -278,6 +300,17 @@
                   </p>
               </div>
             </div><!-- End Info Item -->
+
+            <!-- <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-building flex-shrink-0"></i>
+              <div>
+                <h3>Our Offices</h3>
+                <div style="display: ruby-text;"><i class="bi bi-geo small"></i> Dallas, Texas, United States</div>
+                 <div style="display: ruby-text;"> <i class="bi bi-geo small"></i> Wiesbaden, Germany </div>
+                 <div style="display: ruby-text;"> <i class="bi bi-geo small"></i> Ahmedabad / Bangalore, India</div>
+              </div>
+            </div> -->
+            <!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-telephone flex-shrink-0"></i>

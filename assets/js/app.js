@@ -1,5 +1,3 @@
-
-
 // Function to fetch and display tools and technologies with categories
 function getToolsAndTech() {
   const toolsContainer = document.getElementById("tools-container");
@@ -64,14 +62,13 @@ function getNavigationServices() {
         categoryMenuHTML += `</ul></li>`;
         servicesMenu.innerHTML += categoryMenuHTML;
       });
-      navmenulinks = document.querySelectorAll('.navmenu a');
+      navmenulinks = document.querySelectorAll(".navmenu a");
       // Addming these when navigation content loaded so that it can open properly
-      navmenuScrollspy()
-      hideMobileNav()
-      toggleMobileNav()
+      navmenuScrollspy();
+      hideMobileNav();
+      toggleMobileNav();
     })
     .catch((error) => console.error("Error loading services:", error));
-
 }
 
 // Function to fetch and display services also including top menu of services with categories
@@ -82,7 +79,7 @@ function getServices() {
     .then((categories) => {
       // Sort categories by the 'order' field
       categories.sort((a, b) => a.order - b.order);
-      categories.forEach((category) => {
+      categories.forEach((category, cIndex) => {
         // Convert category name to slug for IDs and links
         const categorySlug = convertToSlug(category.category);
         // Create a category title
@@ -110,6 +107,10 @@ function getServices() {
         `;
           servicesContainer.innerHTML += serviceHTML;
         });
+        if (cIndex < categories.length - 1) {
+          // Add the Divider section after the last category
+          servicesContainer.innerHTML += ` <section class="divider section light-background"></section>`;
+        }
       });
     })
     .catch((error) => console.error("Error loading services:", error));
@@ -121,7 +122,7 @@ function getJobs() {
   // Fetch services data from JSON
   fetchData("assets/data/jobs.json")
     .then((jobs) => {
-      if(jobs.length === 0) {
+      if (jobs.length === 0) {
         container.innerHTML = `<div class="col-12"><h3 class="category-title">No Jobs Available</h3></div>`;
         return;
       }
@@ -145,20 +146,19 @@ function getJobs() {
           </div>
         </div>
       `;
-      container.innerHTML += serviceHTML;
+        container.innerHTML += serviceHTML;
       });
     })
     .catch((error) => console.error("Error loading services:", error));
 }
 
-
 function getStats() {
   const statsContainer = document.getElementById("stats-container");
-   // Fetch certificates data from JSON
-   fetchData("assets/data/stats.json")
-   .then((stats) => {
-    stats.forEach((stat, index) => {
-      statsContainer.innerHTML += `
+  // Fetch certificates data from JSON
+  fetchData("assets/data/stats.json")
+    .then((stats) => {
+      stats.forEach((stat, index) => {
+        statsContainer.innerHTML += `
           <div class="col-lg-6 col-sm-6 col-md-6">
             <div class="stats-item d-flex">
               <i class="${stat.icon} flex-shrink-0"></i>
@@ -168,18 +168,19 @@ function getStats() {
               </div>
             </div>
           </div>
-    `
-     })
-    }).catch((error) => console.error("Error loading Stats:", error));
+    `;
+      });
+    })
+    .catch((error) => console.error("Error loading Stats:", error));
 }
 
 function getFAQ() {
   const container = document.getElementById("faq-container");
-   // Fetch certificates data from JSON
-   fetchData("assets/data/faq.json")
-   .then((faqs) => {
-    faqs.forEach((faq, index) => {
-      container.innerHTML += `
+  // Fetch certificates data from JSON
+  fetchData("assets/data/faq.json")
+    .then((faqs) => {
+      faqs.forEach((faq, index) => {
+        container.innerHTML += `
         <div class="row faq-item" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-5 d-flex">
             <i class="bi bi-question-circle"></i>
@@ -190,19 +191,22 @@ function getFAQ() {
             ${faq.answer}
           </div>
         </div>
-    `
-     })
-    }).catch((error) => console.error("Error loading FAQ:", error));
+    `;
+      });
+    })
+    .catch((error) => console.error("Error loading FAQ:", error));
 }
 
 function getCaseStudies() {
-  const caseStudiesContainer = document.getElementById("case-studies-container");
+  const caseStudiesContainer = document.getElementById(
+    "case-studies-container"
+  );
   // Fetch case studies data from JSON
   fetchData("assets/data/case-studies.json")
     .then((caseStudies) => {
       caseStudies.forEach((caseStudy, index) => {
         let caseStudyHTML = `
-           <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+           <div class="marquee-item" >
             <div class="service-item position-relative">
               <div class="img">
                 <img loading="lazy" src="${caseStudy.image}" class="img-fluid" alt="${caseStudy.title}">
@@ -222,12 +226,14 @@ function getCaseStudies() {
 }
 
 function getCertificates() {
-  const certificatesContainer = document.getElementById("certificates-container");
+  const certificatesContainer = document.getElementById(
+    "certificates-container"
+  );
   // Fetch certificates data from JSON
   fetchData("assets/data/certifications.json")
     .then((certificates) => {
       certificates.forEach((certificate, index) => {
-        let certificateHTML =  `<div class="col-lg-2 col-md-3 portfolio-item isotope-item filter-app">
+        let certificateHTML = `<div class="col-lg-2 col-md-3 portfolio-item isotope-item filter-app">
               <div class="portfolio-content text-center">
                 <img loading="lazy" src="${certificate.icon}" class="img-fluid" alt="${certificate.title}">
                 <div class="portfolio-info">
@@ -235,7 +241,7 @@ function getCertificates() {
                   <p>${certificate.title}</p>
                 </div>
               </div>
-            </div>`
+            </div>`;
         certificatesContainer.innerHTML += certificateHTML;
       });
     })
